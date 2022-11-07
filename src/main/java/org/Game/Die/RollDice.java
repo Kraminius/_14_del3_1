@@ -6,7 +6,7 @@ public class RollDice {
 
     private int []ourRolls; //The collected rolls
 
-    private final int numberOfRolls = 2; //Number of times the die is being rolled
+    private final int numberOfRolls = 1; //Number of times the die is being rolled
     private Die die = new Die();
     public void Roll(){
         ourRolls = new int[numberOfRolls];
