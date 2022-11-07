@@ -1,14 +1,21 @@
 package org.Game.ChanceCards;
 
 public class Cards {
-    private Card[] cards = new Card[24];
+    private Card[] cards = new Card[20];
 
-    public Card createCard(String name, String desc, String func){
-        Card c = new Card(name, desc, func);
+    public void createCards(){
+        Descriptions desc = new Descriptions();
+        String [] descriptions = desc.getCardInfo();
+        String [] functions = desc.getCardInfo();
         for(int i = 0; i < cards.length; i++){
             if(cards[i] == null)
             {
-                cards[i] = c; break;
+                String description = descriptions[i];
+                String func = functions[i];
+                Card c = new Card();
+                c.CreateCard(description, func);
+                cards[i] = c;
+                break;
             }
         }
     }

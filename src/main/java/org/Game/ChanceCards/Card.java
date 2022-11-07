@@ -3,29 +3,15 @@ package org.Game.ChanceCards;
 import java.io.Serializable;
 
 public class Card {
-    private String name;
     private String description;
     private String function;
 
-    public Card(String name, String desc, String func) {
-
-    }
-
-    public Card CreateCard(String cardName, String desc, String cardFunction){
-        setName(cardName);
+    public Card CreateCard(String desc, String cardFunction){
         setDescription(desc);
         setFunction(cardFunction);
         return this;
     }
 
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getDescription() {
         return description;
