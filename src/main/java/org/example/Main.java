@@ -9,6 +9,7 @@ public class Main {
         DirectGUICommands guiCommands = new DirectGUICommands();
 
         guiCommands.CreateGUI();
+        
 
     }
 }
