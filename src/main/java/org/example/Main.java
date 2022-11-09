@@ -10,12 +10,14 @@ public class Main {
 
         DirectGUICommands guiCommands = new DirectGUICommands();
         Player player = new Player();
+        player.AmountOfPlayers(4);
         guiCommands.AddPlayers(player);
 
         while(true){
+            //Write something in console to roll
             Scanner scanner = new Scanner(System.in);
             scanner.nextLine();
-            guiCommands.MovePlayer(player);
+            guiCommands.MovePlayer(player.NextPlayer());
         }
 
 
