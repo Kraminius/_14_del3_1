@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TC1_DiceTest {
 
     @Test
-    @DisplayName("Dice is random (within 5%)")
+    @DisplayName("Dice is random (within 5% of average)")
     void testAddMoney() {
         int rollNumber = 1000; //Hvor mange gange terningen rulles
         int value = 0;
