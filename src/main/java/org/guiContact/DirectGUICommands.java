@@ -11,12 +11,18 @@ import java.awt.*;
 
 public class DirectGUICommands {
     private static GUI gui;
-    private GUI_Player andreas;
+    private GUI_Player[] gui_players;
+
+    private Color[] colors = new Color[4];
 
 
     public DirectGUICommands(){
 
         gui = getInstanceGUI();
+        colors[0] = Color.BLACK;
+        colors[1] = Color.BLUE;
+        colors[2] = Color.GREEN;
+        colors[3] = Color.MAGENTA;
 
 
     }
@@ -26,41 +32,54 @@ public class DirectGUICommands {
 
     }
 
+    //This method moves a player
     public void MovePlayer(Player player){
 
         RollDice rollDice = new RollDice();
 
+        //Rolls
         rollDice.Roll();
         int ourRoll = rollDice.getOurRolls();
 
+        //Finds players next position
         int nextFieldPlacement = player.getPosition() + ourRoll;
 
+        //Method for going back to first field
         if (nextFieldPlacement > 39){
             nextFieldPlacement = nextFieldPlacement - 40;
         }
 
+        //Which field player has landed on
         GUI_Field fields = gui.getFields()[nextFieldPlacement];
-
-        andreas.getCar().setPosition(fields);
-
+        //Sets GUIPlayer position (player id-1 because of array, maybe change playerid's to start at 0)
+        gui_players[player.getID()-1].getCar().setPosition(fields);
+        //Sets player object position
         player.setPosition(nextFieldPlacement);
-        System.out.println(ourRoll);
+
+        //Prints roll and player id to console in console
+        System.out.println("Roll: " +ourRoll);
+        System.out.println("PlayerID: " +player.getID());
 
 
     }
 
-    public void AddPlayers(Player Cplayer){
-        GUI_Car car = new GUI_Car();
-        car.setPrimaryColor(Color.GREEN);
-        GUI_Player player = new GUI_Player("Andreas",20000,car);
-        gui.addPlayer(player);
+    public void AddPlayers(Player ClassPlayer){
 
-        GUI_Field fields = gui.getFields()[0];
-        player.getCar().setPosition(fields);
+        //Creates gui_players array which is equal to how many players we have
+        gui_players = new GUI_Player[ClassPlayer.getPlayers().length];
 
-        Cplayer.setPosition(0);
+        //for each player we create a new GUI_Player object
+        for(int i =0; i < ClassPlayer.getPlayers().length; i++){
+            GUI_Car car = new GUI_Car();
+            car.setPrimaryColor(colors[i]);
+            GUI_Player guiplayer = new GUI_Player("Player" + (i+1),20000,car);
+            gui.addPlayer(guiplayer);
 
-        this.andreas = player;
+            GUI_Field fields = gui.getFields()[0];
+            guiplayer.getCar().setPosition(fields);
+
+            this.gui_players[i] = guiplayer;
+        }
 
     }
 
