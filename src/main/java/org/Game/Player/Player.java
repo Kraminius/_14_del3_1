@@ -20,7 +20,7 @@ public class Player {
 
     //Creates player array and gives each player an ID (Hard coded to 4 players)
     public void AmountOfPlayers(int howManyPlayers){
-        players = new Player[4];
+        players = new Player[howManyPlayers];
         for(int i=0; i<players.length;i++ ){
             players[i] = new Player();
             players[i].setID(i+1);
