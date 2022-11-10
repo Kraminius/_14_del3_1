@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Imported GUI wrongly.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Changed some fields text and colors">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Instantiering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Instantiering.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667832014257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed some fields text and colors">
+      <created>1668076475190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668076475190</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +116,8 @@
     <MESSAGE value="GUI Import" />
     <MESSAGE value="GUI commands class" />
     <MESSAGE value="Imported Dice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Imported Dice" />
+    <MESSAGE value="Changed some fields" />
+    <MESSAGE value="Changed some fields text and colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed some fields text and colors" />
   </component>
 </project>
