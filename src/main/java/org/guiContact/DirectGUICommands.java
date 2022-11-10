@@ -11,13 +11,15 @@ import org.Game.Player.Player;
 import java.awt.*;
 
 public class DirectGUICommands {
+
+    private static DirectGUICommands directGUICommands;
     private static GUI gui;
     private GUI_Player[] gui_players;
 
     private Color[] colors = new Color[4];
 
 
-    public DirectGUICommands(){
+    private DirectGUICommands(){
 
         gui = getInstanceGUI();
         colors[0] = Color.BLACK;
@@ -34,28 +36,14 @@ public class DirectGUICommands {
     }
 
     //This method moves a player
-    public void MovePlayer(Player player){
+    public void MovePlayer(Player player, int nextFieldPlacement, int ourRoll){
 
-        RollDice rollDice = new RollDice();
-
-        //Rolls
-        rollDice.Roll();
-        int ourRoll = rollDice.getOurRolls();
-
-        //Finds players next position
-        int nextFieldPlacement = player.getPosition() + ourRoll;
-
-        //Method for going back to first field
-        if (nextFieldPlacement > 23){
-            nextFieldPlacement = nextFieldPlacement - 24;
-        }
 
         //Which field player has landed on
         GUI_Field fields = gui.getFields()[nextFieldPlacement];
         //Sets GUIPlayer position (player id-1 because of array, maybe change playerid's to start at 0)
         gui_players[player.getID()-1].getCar().setPosition(fields);
-        //Sets player object position
-        player.setPosition(nextFieldPlacement);
+
 
         gui.setDie(ourRoll);
 
@@ -121,5 +109,12 @@ public class DirectGUICommands {
         gui.showMessage("");
     }
 
+    public static DirectGUICommands getInstance(){
+        if(directGUICommands == null){
+            directGUICommands = new DirectGUICommands();
+        }
+
+        return directGUICommands;
+    }
 
 }
