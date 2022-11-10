@@ -5,7 +5,7 @@ import org.guiContact.DirectGUICommands;
 
 public class Functionality {
     Descriptions desc = new Descriptions();
-    DirectGUICommands gui = new DirectGUICommands();
+    DirectGUICommands gui = DirectGUICommands.getInstance();
 
     public boolean doFunction(int id, Player player){
         boolean returnCard = true;
