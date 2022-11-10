@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Changed some fields text and colors">
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Changed skateparken + swimmingpoolen">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Instantiering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Instantiering.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668076475190</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed skateparken + swimmingpoolen">
+      <created>1668076562705</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668076562705</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +125,7 @@
     <MESSAGE value="Imported Dice" />
     <MESSAGE value="Changed some fields" />
     <MESSAGE value="Changed some fields text and colors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed some fields text and colors" />
+    <MESSAGE value="Changed skateparken + swimmingpoolen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed skateparken + swimmingpoolen" />
   </component>
 </project>
