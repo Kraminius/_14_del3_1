@@ -14,7 +14,7 @@ public class Main {
         DirectGUICommands guiCommands = DirectGUICommands.getInstance();
         GameLogic gameLogic = new GameLogic();
         Player player = new Player();
-        player.AmountOfPlayers(4);
+        player.AmountOfPlayers(guiCommands.PlayerAmount());
         guiCommands.AddPlayers(player);
 
         while(true){

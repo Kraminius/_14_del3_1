@@ -7,6 +7,7 @@ import gui_main.GUI;
 import org.Game.Board.Instantiering;
 import org.Game.Die.*;
 import org.Game.Player.Player;
+import org.Game.Player.PlayerAmount;
 
 import java.awt.*;
 
@@ -43,23 +44,23 @@ public class DirectGUICommands {
     }
 
     //This method moves a player
-    public void MovePlayer(Player player, int nextFieldPlacement, int ourRoll){
+    public void MovePlayer(Player player, int nextFieldPlacement, int ourRoll) {
 
 
         //Which field player has landed on
         GUI_Field fields = gui.getFields()[nextFieldPlacement];
         //Sets GUIPlayer position (player id-1 because of array, maybe change playerid's to start at 0)
-        gui_players[player.getID()-1].getCar().setPosition(fields);
+        gui_players[player.getID() - 1].getCar().setPosition(fields);
 
 
         gui.setDie(ourRoll);
 
         //Prints roll and player id to console in console
-        System.out.println("Roll: " +ourRoll);
-        System.out.println("PlayerID: " +player.getID());
-
+        System.out.println("Roll: " + ourRoll);
+        System.out.println("PlayerID: " + player.getID());
 
     }
+
 
     public void AddPlayers(Player ClassPlayer){
 
@@ -110,6 +111,7 @@ public class DirectGUICommands {
             System.out.println("Failure to understand returned answer");
             return "false";
         }
+
     }
     public void messageBox(String msg){
         gui.displayChanceCard(msg);
@@ -122,6 +124,27 @@ public class DirectGUICommands {
         }
 
         return directGUICommands;
+    }
+
+    //Choose number of players
+    public int PlayerAmount(){
+        String chosenSelction = gui.getUserSelection("Vælg antal spillere","2", "3", "4");
+        if(chosenSelction == "2"){
+          PlayerAmount playerNumber = new PlayerAmount(2);
+            return playerNumber.getPlayerAmount();
+        }
+        else if(chosenSelction == "3"){
+            PlayerAmount playerNumber = new PlayerAmount(3);
+            return playerNumber.getPlayerAmount();
+        }
+        else if(chosenSelction == "4"){
+            PlayerAmount playerNumber = new PlayerAmount(4);
+            return playerNumber.getPlayerAmount();
+        }
+        else{
+            System.out.println("Failure to understand returned answer");
+            return 1;
+        }
     }
 
 }

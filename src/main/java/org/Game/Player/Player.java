@@ -1,4 +1,5 @@
 package org.Game.Player;
+import org.guiContact.*;
 
 public class Player {
 
@@ -49,7 +50,7 @@ public class Player {
         nID++;
 
         //Hard coded to 4 players
-        if(nID>3){
+        if(nID>((PlayerAmount.getPlayerAmount())-1)){
             nID =0;
         }
 
