@@ -6,7 +6,15 @@ public class Player {
     private int nID = -1;
     private int position; //A spot between 1 and 40
     private int ID;
+    private int money;
 
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
 
     private Player[] players;
 
@@ -15,7 +23,7 @@ public class Player {
     public Player(){
 
         this.position = 0;
-
+        this.money = 18;
     }
 
     //Creates player array and gives each player an ID (Hard coded to 4 players)
@@ -26,6 +34,14 @@ public class Player {
             players[i].setID(i+1);
         }
 
+    }
+
+    public int getnID() {
+        return nID;
+    }
+
+    public void setnID(int nID) {
+        this.nID = nID;
     }
 
     //Finds next player and returns player object
