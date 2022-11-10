@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Har lavet et Board-mappe&#10;Og en GUI som oprætte Monopoly JR brættet">
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Gui class, starter GUI op">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <workItem from="1667830628147" duration="213000" />
       <workItem from="1667830863728" duration="1283000" />
       <workItem from="1667916785623" duration="1997000" />
-      <workItem from="1668001597695" duration="2909000" />
+      <workItem from="1668001597695" duration="4576000" />
     </task>
     <task id="LOCAL-00001" summary="GUI Import">
       <created>1667831096254</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668003143882</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Gui class, starter GUI op">
+      <created>1668066817220</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668066817220</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +150,7 @@
     <MESSAGE value="TC1 Tester terning er fair (problem bruger RollDice case som ikke længere eksistere)" />
     <MESSAGE value="TC1 færdig, tester at terningen er fair (5% indenfor normalværdien)" />
     <MESSAGE value="Har lavet et Board-mappe&#10;Og en GUI som oprætte Monopoly JR brættet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Har lavet et Board-mappe&#10;Og en GUI som oprætte Monopoly JR brættet" />
+    <MESSAGE value="Gui class, starter GUI op" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gui class, starter GUI op" />
   </component>
 </project>
