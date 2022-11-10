@@ -36,9 +36,9 @@ public class DirectGUICommands {
     }
 
     //Click a button to roll
-    public void StartTurn(){
+    public void StartTurn(Player player){
 
-        String start = gui.getUserButtonPressed("Click button to roll!","Roll");
+        String start = gui.getUserButtonPressed("Player" + player.getID() + " turn! Click button to roll!","Roll");
 
     }
 
