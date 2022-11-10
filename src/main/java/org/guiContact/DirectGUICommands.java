@@ -35,6 +35,13 @@ public class DirectGUICommands {
 
     }
 
+    //Click a button to roll
+    public void StartTurn(){
+
+        String start = gui.getUserButtonPressed("Click button to roll!","Roll");
+
+    }
+
     //This method moves a player
     public void MovePlayer(Player player, int nextFieldPlacement, int ourRoll){
 
