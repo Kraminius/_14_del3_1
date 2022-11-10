@@ -46,8 +46,8 @@ public class DirectGUICommands {
         int nextFieldPlacement = player.getPosition() + ourRoll;
 
         //Method for going back to first field
-        if (nextFieldPlacement > 39){
-            nextFieldPlacement = nextFieldPlacement - 40;
+        if (nextFieldPlacement > 23){
+            nextFieldPlacement = nextFieldPlacement - 24;
         }
 
         //Which field player has landed on
