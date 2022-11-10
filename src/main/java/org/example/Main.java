@@ -19,7 +19,6 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             scanner.nextLine();
             guiCommands.MovePlayer(player.NextPlayer());
-            CardsTest(player.NextPlayer());
         }
 
 
