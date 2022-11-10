@@ -49,7 +49,7 @@ public class Player {
     public Player NextPlayer(){
         nID++;
 
-        //Hard coded to 4 players
+        //bruger PlayerAmount
         if(nID>((PlayerAmount.getPlayerAmount())-1)){
             nID =0;
         }
