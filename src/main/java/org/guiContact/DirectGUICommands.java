@@ -11,13 +11,15 @@ import org.Game.Player.Player;
 import java.awt.*;
 
 public class DirectGUICommands {
+
+    private static DirectGUICommands directGUICommands;
     private static GUI gui;
     private GUI_Player[] gui_players;
 
     private Color[] colors = new Color[4];
 
 
-    public DirectGUICommands(){
+    private DirectGUICommands(){
 
         gui = getInstanceGUI();
         colors[0] = Color.BLACK;
@@ -34,28 +36,14 @@ public class DirectGUICommands {
     }
 
     //This method moves a player
-    public void MovePlayer(Player player){
+    public void MovePlayer(Player player, int nextFieldPlacement, int ourRoll){
 
-        RollDice rollDice = new RollDice();
-
-        //Rolls
-        rollDice.Roll();
-        int ourRoll = rollDice.getOurRolls();
-
-        //Finds players next position
-        int nextFieldPlacement = player.getPosition() + ourRoll;
-
-        //Method for going back to first field
-        if (nextFieldPlacement > 39){
-            nextFieldPlacement = nextFieldPlacement - 40;
-        }
 
         //Which field player has landed on
         GUI_Field fields = gui.getFields()[nextFieldPlacement];
         //Sets GUIPlayer position (player id-1 because of array, maybe change playerid's to start at 0)
         gui_players[player.getID()-1].getCar().setPosition(fields);
-        //Sets player object position
-        player.setPosition(nextFieldPlacement);
+
 
         gui.setDie(ourRoll);
 
@@ -75,7 +63,7 @@ public class DirectGUICommands {
         for(int i =0; i < ClassPlayer.getPlayers().length; i++){
             GUI_Car car = new GUI_Car();
             car.setPrimaryColor(colors[i]);
-            GUI_Player guiplayer = new GUI_Player("Player" + (i+1),20000,car);
+            GUI_Player guiplayer = new GUI_Player("Player" + (i+1),18,car);
             gui.addPlayer(guiplayer);
 
             GUI_Field fields = gui.getFields()[0];
@@ -116,7 +104,17 @@ public class DirectGUICommands {
             return "false";
         }
     }
+    public void messageBox(String msg){
+        gui.displayChanceCard(msg);
+        gui.showMessage("");
+    }
 
+    public static DirectGUICommands getInstance(){
+        if(directGUICommands == null){
+            directGUICommands = new DirectGUICommands();
+        }
 
+        return directGUICommands;
+    }
 
 }
