@@ -56,6 +56,8 @@ public class DirectGUICommands {
         //Sets player object position
         player.setPosition(nextFieldPlacement);
 
+        gui.setDie(ourRoll);
+
         //Prints roll and player id to console in console
         System.out.println("Roll: " +ourRoll);
         System.out.println("PlayerID: " +player.getID());
