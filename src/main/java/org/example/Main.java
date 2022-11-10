@@ -5,6 +5,7 @@ import org.Game.GameLogic;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -18,9 +19,10 @@ public class Main {
 
         while(true){
             //Write something in console to roll
+            Player turnPlayer = player.NextPlayer();
 
-            guiCommands.StartTurn();
-            gameLogic.MovePlayer(player.NextPlayer());
+            guiCommands.StartTurn(turnPlayer);
+            gameLogic.MovePlayer(turnPlayer);
         }
 
 
