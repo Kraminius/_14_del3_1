@@ -5,7 +5,7 @@ import gui_main.GUI;
 
 public class Instantiering {
     // Laver Monoply JR boarded
-    GUI_Field[] fields = {
+    public GUI_Field[] fields = {
             new GUI_Start(),
             new GUI_Street(),
             new GUI_Street(),
@@ -32,5 +32,4 @@ public class Instantiering {
             new GUI_Street(),
     };
 
-    GUI gui = new GUI(fields);
 }

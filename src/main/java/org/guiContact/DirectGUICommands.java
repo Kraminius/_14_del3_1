@@ -4,7 +4,8 @@ import gui_fields.GUI_Car;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Player;
 import gui_main.GUI;
-import org.Game.Die.RollDice;
+import org.Game.Board.Instantiering;
+import org.Game.Die.*;
 import org.Game.Player.Player;
 
 import java.awt.*;
@@ -86,19 +87,24 @@ public class DirectGUICommands {
     }
 
     public static GUI getInstanceGUI(){
+        Instantiering instantiering = new Instantiering();
+
         if(gui == null){
-            gui = new GUI();
+            gui = new GUI(instantiering.fields);
         }
         return gui;
     }
     public String GetStringFromPlayer(String msg){
-        return gui.getUserString(msg);
+        gui.displayChanceCard(msg);
+        return gui.getUserString("");
     }
     public int GetIntFromPlayer(String msg){
-        return gui.getUserInteger(msg);
+        gui.displayChanceCard(msg);
+        return gui.getUserInteger("");
     }
     public String TwoChoiceMessage(String msg, String option1, String option2){
-        String chosenButton = gui.getUserButtonPressed(msg,option1, option2);
+        gui.displayChanceCard(msg);
+        String chosenButton = gui.getUserButtonPressed("",option1, option2);
         if(chosenButton == option1){
             return "1";
         }

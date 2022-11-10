@@ -1,5 +1,6 @@
 package org.example;
 
+import org.Game.ChanceCards.Functionality;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
 
@@ -18,13 +19,19 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             scanner.nextLine();
             guiCommands.MovePlayer(player.NextPlayer());
+            CardsTest(player.NextPlayer());
         }
 
 
 
-        
+
 
     }
+    public static void CardsTest(Player player){
+        Functionality f = new Functionality();
+        f.doFunction(9, player);
+    }
+
 }
 
 //TestAndreas
