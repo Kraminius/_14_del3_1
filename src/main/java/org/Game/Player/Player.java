@@ -32,6 +32,7 @@ public class Player {
     public Player NextPlayer(){
         nID++;
 
+        //Hard coded to 4 players
         if(nID>3){
             nID =0;
         }
