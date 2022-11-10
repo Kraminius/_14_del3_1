@@ -9,8 +9,8 @@ public class Instantiering {
     // Laver Monoply JR boarded
     public GUI_Field[] fields = {
             new GUI_Start("Start", "Modtag M$2, når du passerer", "Modtag M$2, når du passerer", Color.WHITE, Color.BLACK),
-            new GUI_Street("Burgerbaren", "M$1", "", "1", new Color(191, 118, 15), Color.BLACK),
-            new GUI_Street("Pizzariaet", "M$1", "", "1", new Color(191, 118, 15), Color.BLACK),
+            new GUI_Street("Burgerbaren", "M$1", "", "1", new Color(163, 108, 29), Color.BLACK),
+            new GUI_Street("Pizzariaet", "M$1", "", "1", new Color(163, 108, 29), Color.BLACK),
             new GUI_Chance("?", "Chancen", "Træk et chancekort", Color.WHITE, Color.BLACK),
             new GUI_Street("Slikbutikken", "M$1", "", "1", new Color(38, 166, 191), Color.BLACK),
             new GUI_Street("Iskiosken", "M$1", "", "1", new Color(38, 166, 191), Color.BLACK),
