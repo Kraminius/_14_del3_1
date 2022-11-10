@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Changed skateparken + swimmingpoolen">
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Changed spillehallen, biografen, and free parking.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Instantiering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Instantiering.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668076562705</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changed spillehallen, biografen, and free parking.">
+      <created>1668077150853</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668077150853</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +134,7 @@
     <MESSAGE value="Changed some fields" />
     <MESSAGE value="Changed some fields text and colors" />
     <MESSAGE value="Changed skateparken + swimmingpoolen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed skateparken + swimmingpoolen" />
+    <MESSAGE value="Changed spillehallen, biografen, and free parking." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed spillehallen, biografen, and free parking." />
   </component>
 </project>
