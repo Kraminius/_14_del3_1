@@ -89,6 +89,25 @@ public class DirectGUICommands {
         }
         return gui;
     }
+    public String GetStringFromPlayer(String msg){
+        return gui.getUserString(msg);
+    }
+    public int GetIntFromPlayer(String msg){
+        return gui.getUserInteger(msg);
+    }
+    public String TwoChoiceMessage(String msg, String option1, String option2){
+        String chosenButton = gui.getUserButtonPressed(msg,option1, option2);
+        if(chosenButton == option1){
+            return "1";
+        }
+        else if(chosenButton == option2){
+            return "2";
+        }
+        else{
+            System.out.println("Failure to understand returned answer");
+            return "false";
+        }
+    }
 
 
 

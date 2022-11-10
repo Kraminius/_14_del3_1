@@ -1,9 +1,11 @@
 package org.Game.ChanceCards;
 
 import org.Game.Player.Player;
+import org.guiContact.DirectGUICommands;
 
 public class Functionality {
     Descriptions desc = new Descriptions();
+    DirectGUICommands gui = new DirectGUICommands();
     public boolean doFunction(int id, Player player){
         boolean returnCard = true;
         String[] descriptions = desc.getCardInfo();
@@ -36,8 +38,30 @@ public class Functionality {
 
                 break;
             case 9:
+                int move = gui.GetIntFromPlayer(descriptions[9] + " Indtast antallet herunder:");
+                if(move >= 0 && move <= 6) {
+                    //Move player (move) amount of steps.
+                }
+                else{
+                    while(move < 1 || move > 5){
+                        move = gui.GetIntFromPlayer(descriptions[9] + " Dit indtastede tal var udenfor mængden 1-5, prøv igen:");
+                    }
+                    //Move player (move) amount of steps.
+                }
                 break;
             case 10:
+                switch (gui.TwoChoiceMessage(descriptions[10], "Ryk 1 felt frem","Tag et Chancekort mere")){
+                    case "1":
+                        //Ryk spilleren et felt frem.
+                        break;
+                    case "2":
+                        //Pull new card (Needs to be called from the same Class that calls the Cards, otherwise it won't be the same deck and problems will arise.
+                        break;
+                    default:
+                        System.out.println("error");
+                        break;
+                }
+
                 break;
             case 11:
                 break;
