@@ -19,8 +19,7 @@ public class Main {
         while(true){
             //Write something in console to roll
 
-            Scanner scanner = new Scanner(System.in);
-            scanner.nextLine();
+            guiCommands.StartTurn();
             gameLogic.MovePlayer(player.NextPlayer());
         }
 
