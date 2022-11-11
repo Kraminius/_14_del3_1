@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Created field class ZoologiskHave.java">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Drop-ned bar med antal spillere i starten.&#10;Lavede en PlayerAmount klasse som gemme antallet valgt.&#10;Sikrede at spillet virker med den nye klasse">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +22,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="af488447-fb3d-42b9-8bf6-1ebed741cc1d" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -38,22 +33,22 @@
     </option>
   </component>
   <component name="ProjectId" id="2HDrIFjdEHFK6JL4fT0UNhYGdpu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tobia/OneDrive/DTU/1. Semester/Introduktion til Programmering/_14_del3_1/src/main/java/org/Game/Dice&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/tobia/OneDrive/DTU/1. Semester/Introduktion til Programmering/_14_del3_1/src/main/java/org/Game/Dice",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tobia\OneDrive\DTU\1. Semester\Introduktion til Programmering\_14_del3_1\src\main\java\org\Game\Dice" />
@@ -70,7 +65,6 @@
       <updated>1667830413728</updated>
       <workItem from="1667830628147" duration="213000" />
       <workItem from="1667830863728" duration="1283000" />
-      <workItem from="1668153433792" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="GUI Import">
       <created>1667831096254</created>
@@ -121,140 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668077677745</updated>
     </task>
-    <task id="LOCAL-00008" summary="Created field class Biblioteket.java">
-      <created>1668154280734</created>
+    <task id="LOCAL-00008" summary="Drop-ned bar med antal spillere i starten.&#10;Lavede en PlayerAmount klasse som gemme antallet valgt.&#10;Sikrede at spillet virker med den nye klasse">
+      <created>1668081865434</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1668154280734</updated>
+      <updated>1668081865434</updated>
     </task>
-    <task id="LOCAL-00009" summary="Created field class Bowlinghallen.java">
-      <created>1668154291742</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154291742</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Created field class Burgerbaren.java">
-      <created>1668154301004</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154301004</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Created field class ChanceField.java">
-      <created>1668154313410</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154313410</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Changed failure code return from 1 to 0, if you choose outside the defined dropdown options.">
-      <created>1668154367914</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154367914</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Created field class Dyrehandlen.java">
-      <created>1668154383185</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154383185</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Created field class Fields.java">
-      <created>1668154391753</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154391753</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Created field class Iskiosken.java">
-      <created>1668154401899</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154401899</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Created field class Kinoen.java">
-      <created>1668154411868</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154411868</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Created field class Legetoejsbutik.java">
-      <created>1668154424110</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154424110</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Created field class Museet.java">
-      <created>1668154505451</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154505451</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Created field class Pizzariaet.java">
-      <created>1668154514111</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154514111</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Created field class Skateparken.java">
-      <created>1668154530150</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154530150</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Created field class Slikbutikken.java">
-      <created>1668154539617</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154539617</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Created field class Spillehallen.java">
-      <created>1668154555314</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154555314</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Created field class Strandpromenaden.java">
-      <created>1668154563753</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154563753</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Created field class Swimmingpool.java">
-      <created>1668154572395</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154572395</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Created field class Vandlandet.java">
-      <created>1668154581232</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154581232</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Created field class ZoologiskHave.java">
-      <created>1668154600973</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1668154600973</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,31 +140,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="GUI Import" />
+    <MESSAGE value="GUI commands class" />
     <MESSAGE value="Imported Dice" />
     <MESSAGE value="Changed some fields" />
     <MESSAGE value="Changed some fields text and colors" />
     <MESSAGE value="Changed skateparken + swimmingpoolen" />
     <MESSAGE value="Changed spillehallen, biografen, and free parking." />
     <MESSAGE value="Changed rest of fields" />
-    <MESSAGE value="Created field class Biblioteket.java" />
-    <MESSAGE value="Created field class Bowlinghallen.java" />
-    <MESSAGE value="Created field class Burgerbaren.java" />
-    <MESSAGE value="Created field class ChanceField.java" />
-    <MESSAGE value="Changed failure code return from 1 to 0, if you choose outside the defined dropdown options." />
-    <MESSAGE value="Created field class Dyrehandlen.java" />
-    <MESSAGE value="Created field class Fields.java" />
-    <MESSAGE value="Created field class Iskiosken.java" />
-    <MESSAGE value="Created field class Kinoen.java" />
-    <MESSAGE value="Created field class Legetoejsbutik.java" />
-    <MESSAGE value="Created field class Museet.java" />
-    <MESSAGE value="Created field class Pizzariaet.java" />
-    <MESSAGE value="Created field class Skateparken.java" />
-    <MESSAGE value="Created field class Slikbutikken.java" />
-    <MESSAGE value="Created field class Spillehallen.java" />
-    <MESSAGE value="Created field class Strandpromenaden.java" />
-    <MESSAGE value="Created field class Swimmingpool.java" />
-    <MESSAGE value="Created field class Vandlandet.java" />
-    <MESSAGE value="Created field class ZoologiskHave.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created field class ZoologiskHave.java" />
+    <MESSAGE value="Drop-ned bar med antal spillere i starten.&#10;Lavede en PlayerAmount klasse som gemme antallet valgt.&#10;Sikrede at spillet virker med den nye klasse" />
+    <option name="LAST_COMMIT_MESSAGE" value="Drop-ned bar med antal spillere i starten.&#10;Lavede en PlayerAmount klasse som gemme antallet valgt.&#10;Sikrede at spillet virker med den nye klasse" />
   </component>
 </project>
