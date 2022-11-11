@@ -143,7 +143,7 @@ public class DirectGUICommands {
         }
         else{
             System.out.println("Failure to understand returned answer");
-            return 1;
+            return 0;
         }
     }
 
