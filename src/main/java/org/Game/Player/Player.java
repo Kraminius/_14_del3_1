@@ -50,7 +50,7 @@ public class Player {
         nID++;
 
         //bruger PlayerAmount
-        if(nID>((PlayerAmount.getPlayerAmount())-1)){
+        if(nID>players.length-1){
             nID =0;
         }
 
