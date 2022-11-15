@@ -1,5 +1,7 @@
 package org.example;
 
+import org.Game.Board.Fields;
+import org.Game.Board.Picker;
 import org.Game.ChanceCards.Functionality;
 import org.Game.GameLogic;
 import org.Game.Player.Player;
@@ -20,7 +22,7 @@ public class Main {
         while(true){
             //Write something in console to roll
             Player turnPlayer = player.NextPlayer();
-
+            buyPropertyTest(turnPlayer);
             guiCommands.StartTurn(turnPlayer);
             gameLogic.MovePlayer(turnPlayer);
         }
@@ -34,7 +36,9 @@ public class Main {
         Functionality f = new Functionality();
         f.doFunction(9, player);
     }
+    public static void buyPropertyTest(Player player){
+        Picker picker = new Picker();
+        picker.landedField(player,1);
+    }
 
 }
-
-//TestAndreas
