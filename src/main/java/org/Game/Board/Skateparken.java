@@ -9,12 +9,14 @@ import java.awt.*;
 public class Skateparken extends Fields {
 GUI gui = new GUI();
 
+    public Skateparken(int Id, int fieldRent) {
+        super(Id, fieldRent);
+    }
+
+
     public int buyableFieldID() {
         int fieldID = 8;
 
         return fieldID;
-    }
-    public void guiOwned() {
-        ((GUI_Ownable)gui.getFields()[8]).setBorder(Color.GREEN);
     }
 }
