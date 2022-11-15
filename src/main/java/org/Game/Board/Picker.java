@@ -17,7 +17,7 @@ public class Picker {
                 fields.buyable(player);
                 break;
             default:
-
+//testcommit
 
         }
     }
