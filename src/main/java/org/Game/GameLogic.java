@@ -31,4 +31,10 @@ public class GameLogic {
 
     }
 
+    public void printPlayerPositionToConsole(int fieldIndex) {
+        fieldIndex = 0;
+
+        System.out.println(fieldIndex);
+    }
+
 }
