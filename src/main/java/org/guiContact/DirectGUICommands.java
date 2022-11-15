@@ -2,6 +2,7 @@ package org.guiContact;
 
 import gui_fields.GUI_Car;
 import gui_fields.GUI_Field;
+import gui_fields.GUI_Ownable;
 import gui_fields.GUI_Player;
 import gui_main.GUI;
 import org.Game.Board.Instantiering;
@@ -28,7 +29,6 @@ public class DirectGUICommands {
         colors[2] = Color.GREEN;
         colors[3] = Color.MAGENTA;
 
-
     }
 
     public void CreateGUI(){
@@ -39,7 +39,7 @@ public class DirectGUICommands {
     //Click a button to roll
     public void StartTurn(Player player){
 
-        String start = gui.getUserButtonPressed("Player" + player.getID() + " turn! Click button to roll!","Roll");
+        gui.getUserButtonPressed("Player " + player.getID() + " turn! Click button to roll!","Roll");
 
     }
 
@@ -146,5 +146,10 @@ public class DirectGUICommands {
             return 0;
         }
     }
+
+    public void ownedPropertyGUI(Player player, int fieldID) {
+        ((GUI_Ownable)gui.getFields()[fieldID]).setBorder(colors[player.getID()-1]);
+    }
+
 
 }
