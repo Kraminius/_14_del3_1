@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="TC1 færdig, tester at terningen er fair (5% indenfor normalværdien)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Picker.java" afterDir="false" />
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Ændrede end kommentar som var forkert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Biblioteket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Biblioteket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Bowlinghallen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Bowlinghallen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Burgerbaren.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Burgerbaren.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Dyrehandlen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Dyrehandlen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Fields.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Iskiosken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Iskiosken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Kinoen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Kinoen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Legetoejsbutik.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Legetoejsbutik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Museet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Museet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Pizzariaet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Pizzariaet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Skateparken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Skateparken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Slikbutikken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Slikbutikken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Spillehallen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Spillehallen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Strandpromenaden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Strandpromenaden.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Swimmingpool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Swimmingpool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/Vandlandet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/Vandlandet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Board/ZoologiskHave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Board/ZoologiskHave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Test/TC1_DiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Test/TC1_DiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
