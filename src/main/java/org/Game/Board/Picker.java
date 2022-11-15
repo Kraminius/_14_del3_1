@@ -9,7 +9,10 @@ public class Picker {
     private Fields fields;
 
 
-    public void LandedField() {
-        switch ()
-    }
-}
+    /* public void LandedField() {
+        switch () {
+            default:
+
+     */
+        }
+
