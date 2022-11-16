@@ -24,6 +24,10 @@ public class Picker {
                 fields = Slikbutikken.getInstance();
                 fields.buyable(player);
                 break;
+            case 5:
+                fields = Iskiosken.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit
