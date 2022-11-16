@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class ZoologiskHave extends Fields {
 
-
-    public ZoologiskHave(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static ZoologiskHave zoologiskHave;
+    private ZoologiskHave() {
+        super(20, 4);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class ZoologiskHave extends Fields {
 
         return fieldID;
     }
+
+    public static ZoologiskHave getInstance(){
+        if(zoologiskHave == null){
+            zoologiskHave = new ZoologiskHave();
+        }
+        return zoologiskHave;
+    }
+
 }

@@ -64,6 +64,10 @@ public class Picker {
                 fields = Bowlinghallen.getInstance();
                 fields.buyable(player);
                 break;
+            case 20:
+                fields = ZoologiskHave.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit
