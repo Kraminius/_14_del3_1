@@ -60,6 +60,10 @@ public class Picker {
                 fields = Dyrehandlen.getInstance();
                 fields.buyable(player);
                 break;
+            case 19:
+                fields = Bowlinghallen.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit

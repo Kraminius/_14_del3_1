@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class Bowlinghallen extends Fields {
 
-
-    public Bowlinghallen(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Bowlinghallen bowlinghallen;
+    private Bowlinghallen() {
+        super(19, 4);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class Bowlinghallen extends Fields {
 
         return fieldID;
     }
+
+    public static Bowlinghallen getInstance(){
+        if(bowlinghallen == null){
+            bowlinghallen = new Bowlinghallen();
+        }
+        return bowlinghallen;
+    }
+
 }
