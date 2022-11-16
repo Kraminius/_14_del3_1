@@ -28,6 +28,10 @@ public class Picker {
                 fields = Iskiosken.getInstance();
                 fields.buyable(player);
                 break;
+            case 7:
+                fields = Museet.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit

@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class Museet extends Fields {
 
-
-    public Museet(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Museet museet;
+    private Museet() {
+        super(7, 2);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class Museet extends Fields {
 
         return fieldID;
     }
+
+    public static Museet getInstance(){
+        if(museet == null){
+            museet = new Museet();
+        }
+        return museet;
+    }
+
 }
