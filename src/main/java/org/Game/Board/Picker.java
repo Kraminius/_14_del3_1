@@ -68,6 +68,10 @@ public class Picker {
                 fields = ZoologiskHave.getInstance();
                 fields.buyable(player);
                 break;
+            case 22:
+                fields = Vandlandet.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit

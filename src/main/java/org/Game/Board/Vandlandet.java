@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class Vandlandet extends Fields {
 
-
-    public Vandlandet(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Vandlandet vandlandet;
+    private Vandlandet() {
+        super(22, 5);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class Vandlandet extends Fields {
 
         return fieldID;
     }
+
+    public static Vandlandet getInstance(){
+        if(vandlandet == null){
+            vandlandet = new Vandlandet();
+        }
+        return vandlandet;
+    }
+
 }
