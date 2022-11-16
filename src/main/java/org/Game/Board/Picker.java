@@ -13,7 +13,7 @@ public class Picker {
     public void landedField(Player player, int fieldIndex) {
         switch (fieldIndex) {
             case 1:
-                fields = new Burgerbaren();
+                fields = Burgerbaren.getInstance();
                 fields.buyable(player);
                 break;
             default:
