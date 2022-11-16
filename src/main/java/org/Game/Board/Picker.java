@@ -52,6 +52,10 @@ public class Picker {
                 fields = Kinoen.getInstance();
                 fields.buyable(player);
                 break;
+            case 16:
+                fields = Legetoejsbutik.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit

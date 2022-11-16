@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class Legetoejsbutik extends Fields {
 
-
-    public Legetoejsbutik(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Legetoejsbutik legetoejsbutik;
+    private Legetoejsbutik() {
+        super(16, 3);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class Legetoejsbutik extends Fields {
 
         return fieldID;
     }
+
+    public static Legetoejsbutik getInstance(){
+        if(legetoejsbutik == null){
+            legetoejsbutik = new Legetoejsbutik();
+        }
+        return legetoejsbutik;
+    }
+
 }
