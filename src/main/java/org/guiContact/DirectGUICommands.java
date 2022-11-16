@@ -7,6 +7,7 @@ import gui_fields.GUI_Player;
 import gui_main.GUI;
 import org.Game.Board.Instantiering;
 import org.Game.Die.*;
+import org.Game.Player.CurrentPlayer;
 import org.Game.Player.Player;
 import org.Game.Player.PlayerAmount;
 
@@ -148,7 +149,8 @@ public class DirectGUICommands {
     }
 
     public void ownedPropertyGUI(Player player, int fieldID) {
-        ((GUI_Ownable)gui.getFields()[fieldID]).setBorder(colors[player.getID()-1]);
+        CurrentPlayer currentPlayer = new CurrentPlayer();
+        ((GUI_Ownable)gui.getFields()[fieldID]).setBorder(colors[currentPlayer.getCurrentPlayerNumber()]);
     }
 
 
