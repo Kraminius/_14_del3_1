@@ -16,6 +16,10 @@ public class Picker {
                 fields = Burgerbaren.getInstance();
                 fields.buyable(player);
                 break;
+            case 2:
+                fields = Pizzariaet.getInstance();
+                fields.buyable(player);
+                break;
             default:
 //testcommit
 

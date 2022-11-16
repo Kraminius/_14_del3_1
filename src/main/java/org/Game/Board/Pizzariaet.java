@@ -2,8 +2,10 @@ package org.Game.Board;
 
 public class Pizzariaet extends Fields {
 
-    public Pizzariaet(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Pizzariaet pizzariaet;
+
+    private Pizzariaet() {
+        super(2, 1);
     }
 
     public int buyableFieldID() {
@@ -11,4 +13,13 @@ public class Pizzariaet extends Fields {
 
         return fieldID;
     }
+
+    public static Pizzariaet getInstance(){
+        if(pizzariaet == null){
+            pizzariaet = new Pizzariaet();
+        }
+
+        return pizzariaet;
+    }
+
 }

@@ -38,7 +38,7 @@ public class Main {
     }
     public static void buyPropertyTest(Player player){
         Picker picker = new Picker();
-        picker.landedField(player,1);
+        picker.landedField(player,2);
     }
 
 }
