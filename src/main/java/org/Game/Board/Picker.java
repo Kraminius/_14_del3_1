@@ -72,6 +72,10 @@ public class Picker {
                 fields = Vandlandet.getInstance();
                 fields.buyable(player);
                 break;
+            case 23:
+                fields = Strandpromenaden.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit

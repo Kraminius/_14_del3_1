@@ -2,8 +2,9 @@ package org.Game.Board;
 
 public class Strandpromenaden extends Fields {
 
-    public Strandpromenaden(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Strandpromenaden strandpromenaden;
+    public Strandpromenaden() {
+        super(23, 5);
     }
 
     public int buyableFieldID() {
@@ -11,4 +12,12 @@ public class Strandpromenaden extends Fields {
 
         return fieldID;
     }
+
+    public static Strandpromenaden getInstance(){
+        if(strandpromenaden == null){
+            strandpromenaden = new Strandpromenaden();
+        }
+        return strandpromenaden;
+    }
+
 }
