@@ -1,5 +1,6 @@
 package org.Game;
 
+import org.Game.Board.Picker;
 import org.Game.Die.RollDice;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
@@ -29,6 +30,11 @@ public class GameLogic {
         DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
         directGUICommands.MovePlayer(player, nextFieldPlacement, ourRoll);
 
+    }
+
+    public static void buyProperty(Player player, int fieldIndex){
+        Picker picker = new Picker();
+        picker.landedField(player,fieldIndex);
     }
 
     public void printPlayerPositionToConsole(int fieldIndex) {
