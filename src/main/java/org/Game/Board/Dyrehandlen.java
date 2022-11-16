@@ -2,8 +2,9 @@ package org.Game.Board;
 
 public class Dyrehandlen extends Fields {
 
-    public Dyrehandlen(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Dyrehandlen dyrehandlen;
+    private Dyrehandlen() {
+        super(17, 3);
     }
 
     public int buyableFieldID() {
@@ -11,4 +12,12 @@ public class Dyrehandlen extends Fields {
 
         return fieldID;
     }
+
+    public static Dyrehandlen getInstance(){
+        if(dyrehandlen == null){
+            dyrehandlen = new Dyrehandlen();
+        }
+        return dyrehandlen;
+    }
+
 }

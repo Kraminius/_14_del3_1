@@ -56,6 +56,10 @@ public class Picker {
                 fields = Legetoejsbutik.getInstance();
                 fields.buyable(player);
                 break;
+            case 17:
+                fields = Dyrehandlen.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit
