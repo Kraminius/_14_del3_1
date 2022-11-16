@@ -127,6 +127,9 @@ public class DirectGUICommands {
         return directGUICommands;
     }
 
+    /**
+     * @return Drop-down selection, 2,3,4 players. returns playernumber.getPlayerAmount();
+     */
     //Choose number of players
     public int PlayerAmount(){
         String chosenSelction = gui.getUserSelection("Vælg antal spillere","2", "3", "4");
