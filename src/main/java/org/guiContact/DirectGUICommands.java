@@ -152,8 +152,9 @@ public class DirectGUICommands {
     }
 
     public void ownedPropertyGUI(Player player, int fieldID) {
-        CurrentPlayer currentPlayer = new CurrentPlayer();
-        ((GUI_Ownable)gui.getFields()[fieldID]).setBorder(colors[currentPlayer.getCurrentPlayerNumber()]);
+        int num = (player.getID()-1);
+        Color col = colors[num];
+        ((GUI_Ownable)gui.getFields()[fieldID]).setBorder(colors[player.getID()-1]);
     }
 
 
