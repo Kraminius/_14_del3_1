@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class Kinoen extends Fields {
 
-
-    public Kinoen(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Kinoen kinoen;
+    private Kinoen() {
+        super(14, 3);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class Kinoen extends Fields {
 
         return fieldID;
     }
+
+    public static Kinoen getInstance(){
+        if(kinoen == null){
+            kinoen = new Kinoen();
+        }
+        return kinoen;
+    }
+
 }

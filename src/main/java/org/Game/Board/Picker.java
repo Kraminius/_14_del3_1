@@ -48,6 +48,10 @@ public class Picker {
                 fields = Spillehallen.getInstance();
                 fields.buyable(player);
                 break;
+            case 14:
+                fields = Kinoen.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit
