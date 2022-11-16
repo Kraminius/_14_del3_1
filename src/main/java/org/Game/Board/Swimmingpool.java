@@ -2,9 +2,9 @@ package org.Game.Board;
 
 public class Swimmingpool extends Fields {
 
-
-    public Swimmingpool(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Swimmingpool swimmingpool;
+    private Swimmingpool() {
+        super(11, 2);
     }
 
     public int buyableFieldID() {
@@ -12,4 +12,12 @@ public class Swimmingpool extends Fields {
 
         return fieldID;
     }
+
+    public static Swimmingpool getInstance(){
+        if(swimmingpool == null){
+            swimmingpool = new Swimmingpool();
+        }
+        return swimmingpool;
+    }
+
 }
