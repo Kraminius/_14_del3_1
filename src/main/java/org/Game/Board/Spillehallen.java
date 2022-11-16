@@ -2,8 +2,9 @@ package org.Game.Board;
 
 public class Spillehallen extends Fields {
 
-    public Spillehallen(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Spillehallen spillehallen;
+    private Spillehallen() {
+        super(13, 3);
     }
 
     public int buyableFieldID() {
@@ -11,4 +12,12 @@ public class Spillehallen extends Fields {
 
         return fieldID;
     }
+
+    public static Spillehallen getInstance(){
+        if(spillehallen == null){
+            spillehallen = new Spillehallen();
+        }
+        return spillehallen;
+    }
+
 }

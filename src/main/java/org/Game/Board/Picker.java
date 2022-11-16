@@ -44,6 +44,10 @@ public class Picker {
                 fields = Swimmingpool.getInstance();
                 fields.buyable(player);
                 break;
+            case 13:
+                fields = Spillehallen.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit
