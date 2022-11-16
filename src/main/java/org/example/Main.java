@@ -22,7 +22,7 @@ public class Main {
         while(true){
             //Write something in console to roll
             Player turnPlayer = player.NextPlayer();
-            buyPropertyTest(turnPlayer);
+            buyPropertyTest(turnPlayer,1);
             guiCommands.StartTurn(turnPlayer);
             gameLogic.MovePlayer(turnPlayer);
         }
@@ -36,9 +36,9 @@ public class Main {
         Functionality f = new Functionality();
         f.doFunction(9, player);
     }
-    public static void buyPropertyTest(Player player){
+    public static void buyPropertyTest(Player player, int fieldIndex){
         Picker picker = new Picker();
-        picker.landedField(player,2);
+        picker.landedField(player,fieldIndex);
     }
 
 }
