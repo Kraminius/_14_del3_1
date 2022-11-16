@@ -36,6 +36,10 @@ public class Picker {
                 fields = Biblioteket.getInstance();
                 fields.buyable(player);
                 break;
+            case 10:
+                fields = Skateparken.getInstance();
+                fields.buyable(player);
+                break;
 
             default:
 //testcommit

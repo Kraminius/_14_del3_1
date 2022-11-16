@@ -7,16 +7,24 @@ import gui_fields.GUI_Ownable;
 import java.awt.*;
 
 public class Skateparken extends Fields {
-GUI gui = new GUI();
 
-    public Skateparken(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Skateparken skateparken;
+
+    private Skateparken() {
+        super(10, 2);
     }
 
 
     public int buyableFieldID() {
-        int fieldID = 8;
+        int fieldID = 10;
 
         return fieldID;
+    }
+
+    public static Skateparken getInstance(){
+        if(skateparken == null){
+            skateparken = new Skateparken();
+        }
+        return skateparken;
     }
 }
