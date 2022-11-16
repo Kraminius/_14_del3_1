@@ -2,8 +2,9 @@ package org.Game.Board;
 
 public class Slikbutikken extends Fields {
 
-    public Slikbutikken(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    private static Slikbutikken slikbutikken;
+    private Slikbutikken() {
+        super(4, 1);
     }
 
     public int buyableFieldID() {
@@ -11,4 +12,12 @@ public class Slikbutikken extends Fields {
 
         return fieldID;
     }
+
+    public static Slikbutikken getInstance(){
+        if(slikbutikken == null){
+            slikbutikken = new Slikbutikken();
+        }
+        return slikbutikken;
+    }
+
 }
