@@ -20,7 +20,7 @@ public class Main {
         guiCommands.AddPlayers(player);
 
         while(true){
-            //Write something in console to roll
+
             Player turnPlayer = player.NextPlayer();
 
             guiCommands.StartTurn(turnPlayer);
