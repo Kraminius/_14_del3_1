@@ -8,7 +8,7 @@ public class Cards {
     private Card[] cards = new Card[20];
     private boolean hasShuffled = false;
 
-    public void createCards(){
+    /*public void createCards(){
         Descriptions desc = new Descriptions();
         String [] descriptions = desc.getCardInfo();
         String [] functions = desc.getCardInfo();
@@ -24,6 +24,8 @@ public class Cards {
             }
         }
     }
+
+     */
     public Card pullCard(){
         Random rnd = new Random();
         if(!hasShuffled){
@@ -37,7 +39,7 @@ public class Cards {
         }
         return cards[0];
     }
-    public void chanceCard(Player player){
+   /* public void chanceCard(Player player){
         Card newCard = pullCard();
         Functionality func = new Functionality();
         if(func.doFunction(newCard.getId(), player)){ //Does the cards actions, returns true if card is put back. returns false if player keeps it.
@@ -47,4 +49,6 @@ public class Cards {
             cards[cards.length-1] = newCard;
         }
     }
+
+    */
 }
