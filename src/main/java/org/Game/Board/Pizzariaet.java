@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Pizzariaet extends Fields {
+public class Pizzariaet extends PropertyFields {
 
     private static Pizzariaet pizzariaet;
 
@@ -21,5 +21,6 @@ public class Pizzariaet extends Fields {
 
         return pizzariaet;
     }
+
 
 }

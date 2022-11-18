@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Dyrehandlen extends Fields {
+public class Dyrehandlen extends PropertyFields {
 
     private static Dyrehandlen dyrehandlen;
     private Dyrehandlen() {

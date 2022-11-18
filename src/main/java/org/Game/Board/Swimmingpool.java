@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Swimmingpool extends Fields {
+public class Swimmingpool extends PropertyFields {
 
     private static Swimmingpool swimmingpool;
     private Swimmingpool() {

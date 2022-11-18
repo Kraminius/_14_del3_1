@@ -1,8 +1,6 @@
 package org.Game.Board;
 
-import org.hamcrest.core.Is;
-
-public class Iskiosken extends Fields {
+public class Iskiosken extends PropertyFields {
 
     private static Iskiosken iskiosken;
     private Iskiosken() {

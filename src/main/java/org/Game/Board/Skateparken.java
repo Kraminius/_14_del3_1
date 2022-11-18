@@ -1,12 +1,6 @@
 package org.Game.Board;
 
-import gui_fields.GUI_Ownable;
-import gui_main.GUI;
-import gui_fields.GUI_Ownable;
-
-import java.awt.*;
-
-public class Skateparken extends Fields {
+public class Skateparken extends PropertyFields {
 
     private static Skateparken skateparken;
 

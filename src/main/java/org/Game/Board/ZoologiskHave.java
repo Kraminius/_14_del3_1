@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class ZoologiskHave extends Fields {
+public class ZoologiskHave extends PropertyFields {
 
     private static ZoologiskHave zoologiskHave;
     private ZoologiskHave() {

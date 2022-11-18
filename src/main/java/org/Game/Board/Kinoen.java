@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Kinoen extends Fields {
+public class Kinoen extends PropertyFields {
 
     private static Kinoen kinoen;
     private Kinoen() {

@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Bowlinghallen extends Fields {
+public class Bowlinghallen extends PropertyFields {
 
     private static Bowlinghallen bowlinghallen;
     private Bowlinghallen() {

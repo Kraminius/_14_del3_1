@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class ChanceField extends Fields {
+public class ChanceField extends PropertyFields {
 
 
     public ChanceField(int Id, int fieldRent) {

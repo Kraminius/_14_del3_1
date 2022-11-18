@@ -1,15 +1,8 @@
 package org.example;
 
-import org.Game.Board.Fields;
-import org.Game.Board.Picker;
-import org.Game.ChanceCards.Descriptions;
-import org.Game.ChanceCards.Functionality;
 import org.Game.GameLogic;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
-
-import java.util.Objects;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {

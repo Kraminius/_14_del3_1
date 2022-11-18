@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Strandpromenaden extends Fields {
+public class Strandpromenaden extends PropertyFields {
 
     private static Strandpromenaden strandpromenaden;
     public Strandpromenaden() {

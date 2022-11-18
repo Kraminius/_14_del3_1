@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Legetoejsbutik extends Fields {
+public class Legetoejsbutik extends PropertyFields {
 
     private static Legetoejsbutik legetoejsbutik;
     private Legetoejsbutik() {

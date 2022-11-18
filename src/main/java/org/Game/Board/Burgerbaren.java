@@ -1,9 +1,6 @@
 package org.Game.Board;
 
-import gui_fields.GUI_Field;
-import org.guiContact.DirectGUICommands;
-
-public class Burgerbaren extends Fields {
+public class Burgerbaren extends PropertyFields {
 
     private static Burgerbaren burgerbaren;
 

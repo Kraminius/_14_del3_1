@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Biblioteket extends Fields {
+public class Biblioteket extends PropertyFields {
 
     private static Biblioteket biblioteket;
     private Biblioteket() {

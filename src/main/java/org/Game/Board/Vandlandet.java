@@ -1,6 +1,6 @@
 package org.Game.Board;
 
-public class Vandlandet extends Fields {
+public class Vandlandet extends PropertyFields {
 
     private static Vandlandet vandlandet;
     private Vandlandet() {
