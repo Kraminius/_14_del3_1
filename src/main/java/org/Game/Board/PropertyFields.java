@@ -30,8 +30,10 @@ public abstract class PropertyFields extends Fields {
     }
     public void buyProperty(Player player) {
         this.player = player;
-        DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
+        player.setMoney(player.getMoney()-this.fieldRent);
         directGUICommands.ownedPropertyGUI(player, fieldID);
+        directGUICommands.changeBalanceGUI(player);
+
     }
 
     public void isPlayerLoadedOrNot(Player player) {

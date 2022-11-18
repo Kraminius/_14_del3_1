@@ -162,4 +162,9 @@ public class DirectGUICommands {
         gui_players[tenant.getID()-1].setBalance(tenant.getMoney());
     }
 
+    public void changeBalanceGUI(Player owner){
+        gui_players[owner.getID()-1].setBalance(owner.getMoney());
+
+    }
+
 }
