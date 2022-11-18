@@ -2,6 +2,7 @@ package org.example;
 
 import org.Game.Board.Fields;
 import org.Game.Board.Picker;
+import org.Game.ChanceCards.Descriptions;
 import org.Game.ChanceCards.Functionality;
 import org.Game.GameLogic;
 import org.Game.Player.Player;
@@ -19,10 +20,10 @@ public class Main {
         player.AmountOfPlayers(guiCommands.PlayerAmount());
         guiCommands.AddPlayers(player);
 
+
         while(true){
 
             Player turnPlayer = player.NextPlayer();
-
             guiCommands.StartTurn(turnPlayer);
             gameLogic.MovePlayer(turnPlayer);
             gameLogic.buyProperty(turnPlayer,turnPlayer.getPosition());
@@ -33,10 +34,14 @@ public class Main {
 
 
     }
-    public static void CardsTest(Player player){
+    /*public static void CardsTest(Player player){
         Functionality f = new Functionality();
         f.doFunction(9, player);
     }
+
+     */
+
+
     /*public static void buyPropertyTest(Player player, int fieldIndex){
         Picker picker = new Picker();
         picker.landedField(player,fieldIndex);
