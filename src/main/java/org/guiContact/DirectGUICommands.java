@@ -6,8 +6,6 @@ import gui_fields.GUI_Ownable;
 import gui_fields.GUI_Player;
 import gui_main.GUI;
 import org.Game.Board.Instantiering;
-import org.Game.Die.*;
-import org.Game.Player.CurrentPlayer;
 import org.Game.Player.Player;
 import org.Game.Player.PlayerAmount;
 
@@ -72,7 +70,7 @@ public class DirectGUICommands {
         for(int i =0; i < ClassPlayer.getPlayers().length; i++){
             GUI_Car car = new GUI_Car();
             car.setPrimaryColor(colors[i]);
-            GUI_Player guiplayer = new GUI_Player("Player" + (i+1),18,car);
+            GUI_Player guiplayer = new GUI_Player("Player" + (i+1),ClassPlayer.getMoney(),car);
             gui.addPlayer(guiplayer);
 
             GUI_Field fields = gui.getFields()[0];
