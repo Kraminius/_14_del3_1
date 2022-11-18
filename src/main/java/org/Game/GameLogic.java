@@ -7,7 +7,9 @@ import org.guiContact.DirectGUICommands;
 
 public class GameLogic {
 
+    DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
 
+    private boolean endGame = false;
 
     public void MovePlayer(Player player){
 
@@ -27,7 +29,7 @@ public class GameLogic {
 
         player.setPosition(nextFieldPlacement);
 
-        DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
+
         directGUICommands.MovePlayer(player, nextFieldPlacement, ourRoll);
 
     }
@@ -43,4 +45,36 @@ public class GameLogic {
         System.out.println(fieldIndex);
     }
 
+    public void endGameCondition(Player player){
+        for(int i = 0; i < player.getPlayers().length; i++){
+            if(player.getPlayers()[i].getMoney() < 0){
+                endGame = true;
+            }
+        }
+
+    }
+
+    public void whoWon(Player player){
+        Player temp;
+        for(int i = 0; i < player.getPlayers().length; i++){
+            for(int j = i+1; j < player.getPlayers().length; j++){
+                if(player.getPlayers()[i].getMoney()>player.getPlayers()[j].getMoney()){
+                    temp = player.getPlayers()[i];
+                    player.getPlayers()[i] = player.getPlayers()[j];
+
+                    player.getPlayers()[j] = temp;
+                }
+            }
+
+        }
+
+        temp = player.getPlayers()[player.getPlayers().length-1];
+
+        directGUICommands.winningGUI(temp);
+
+    }
+
+    public boolean isEndGame() {
+        return endGame;
+    }
 }

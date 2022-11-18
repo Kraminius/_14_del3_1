@@ -4,6 +4,8 @@ import org.Game.GameLogic;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,17 +14,23 @@ public class Main {
         Player player = new Player();
         player.AmountOfPlayers(guiCommands.PlayerAmount());
         guiCommands.AddPlayers(player);
+        Player turnPlayer;
 
 
-        while(true){
+        do{
 
-            Player turnPlayer = player.NextPlayer();
+            turnPlayer = player.NextPlayer();
             guiCommands.StartTurn(turnPlayer);
             gameLogic.MovePlayer(turnPlayer);
             gameLogic.buyProperty(turnPlayer,turnPlayer.getPosition());
-        }
+            gameLogic.endGameCondition(player);
+        }while (!gameLogic.isEndGame());
+
+        gameLogic.whoWon(player);
 
 
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
 
 
 
