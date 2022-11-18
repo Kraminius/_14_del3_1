@@ -157,5 +157,9 @@ public class DirectGUICommands {
         ((GUI_Ownable)gui.getFields()[fieldID]).setBorder(colors[player.getID()-1]);
     }
 
+    public void reentGUI(Player owner, Player tenant){
+        gui_players[owner.getID()-1].setBalance(owner.getMoney());
+        gui_players[tenant.getID()-1].setBalance(tenant.getMoney());
+    }
 
 }

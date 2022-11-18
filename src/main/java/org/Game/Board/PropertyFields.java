@@ -7,6 +7,7 @@ public abstract class PropertyFields extends Fields {
     int fieldID;
     private int fieldRent;
 
+    DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
 
     Player player;
     Instantiering instantiering = new Instantiering();
@@ -18,9 +19,12 @@ public abstract class PropertyFields extends Fields {
 
     public abstract int buyableFieldID();
 
-    public void buyable(Player player) {
+    public void buyableOrRent(Player player) {
         if (this.player == null) {
             isPlayerLoadedOrNot(player);
+        }
+        else {
+            payRent(player);
         }
 
     }
@@ -37,9 +41,19 @@ public abstract class PropertyFields extends Fields {
 
     }
 
+    public void payRent(Player player){
+
+        player.setMoney(player.getMoney()-this.fieldRent);
+        this.player.setMoney(this.player.getMoney()+this.fieldRent);
+        directGUICommands.reentGUI(this.player,player);
+
+    }
+
+
     @Override
     public void turnAction(Player player) {
-        buyProperty(player);
+        buyableOrRent(player);
+
     }
 
 
