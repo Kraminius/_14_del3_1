@@ -24,7 +24,7 @@ public class Player {
     public Player(){
 
         this.position = 0;
-        this.money = 3;
+        this.money = 20;
     }
 
     //Creates player array and gives each player an ID (Hard coded to 4 players)
