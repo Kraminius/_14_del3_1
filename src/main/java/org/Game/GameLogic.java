@@ -56,6 +56,26 @@ public class GameLogic {
 
     }
 
+    public void startMoney(Player player) {
+
+        if (player.getPlayers().length == 4) {
+            for (int i = 0; i < 4; i++) {
+                player.getPlayers()[i].setMoney(16);
+            }
+        }
+        if (player.getPlayers().length == 3) {
+            for (int j = 0; j < 3; j++) {
+                player.getPlayers()[j].setMoney(18);
+            }
+        }
+        if (player.getPlayers().length == 2) {
+            for (int k = 0; k < 2; k++) {
+                player.getPlayers()[k].setMoney(20);
+            }
+        }
+    }
+
+
     public void whoWon(Player player){
         Player temp;
         for(int i = 0; i < player.getPlayers().length; i++){
