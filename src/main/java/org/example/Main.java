@@ -13,6 +13,7 @@ public class Main {
         GameLogic gameLogic = new GameLogic();
         Player player = new Player();
         player.AmountOfPlayers(guiCommands.PlayerAmount());
+        gameLogic.startMoney(player);
         guiCommands.AddPlayers(player);
         Player turnPlayer;
 
