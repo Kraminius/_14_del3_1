@@ -22,12 +22,14 @@ public class GameLogic {
         //Finds players next position
         int nextFieldPlacement = player.getPosition() + ourRoll;
 
-        //Method for going back to first field
+        //Method for going back to first field and giving +2 money for crossing start-line
         if (nextFieldPlacement > 23){
             nextFieldPlacement = nextFieldPlacement - 24;
+            player.setMoney(player.getMoney()+2);
         }
 
         player.setPosition(nextFieldPlacement);
+
 
 
         directGUICommands.MovePlayer(player, nextFieldPlacement, ourRoll);
