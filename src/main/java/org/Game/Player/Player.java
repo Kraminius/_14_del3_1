@@ -9,6 +9,9 @@ public class Player {
     private int ID;
     private int money;
 
+    private boolean jail = false;
+    private boolean GOOJCard = false;
+
     public int getMoney() {
         return money;
     }
@@ -34,6 +37,18 @@ public class Player {
             players[i].setID(i+1);
         }
 
+    }
+    public boolean getJail(){
+        return jail;
+    }
+    public void setJail(boolean b){
+        jail = b;
+    }
+    public boolean getGOOJCard(){
+        return GOOJCard;
+    }
+    public void setGOOJCard(boolean b){
+        GOOJCard = b;
     }
 
     public int getnID() {
