@@ -98,14 +98,18 @@ public class ChanceField extends Fields {
             case 10:
                 break;
             case 11:
+                chanceCardTooMuchCandy(player);
                 break;
             case 12:
                 break;
             case 13:
                 break;
+
             case 14:
+                chanceCardBirthday(player);
                 break;
             case 15:
+                chanceCardGoodBoyHomeWork(player);
                 break;
         }
 
@@ -192,6 +196,41 @@ public class ChanceField extends Fields {
         PropertyFields fields = whatIsPick(property);
         //Decides if free or rent
         freePropertyOrRent(player, fields);
+    }
+
+    /**
+     * Chancecard: 11 You ate too much candy. Retracts -2 money from current balance of current player.
+     * @param player
+     */
+    public void chanceCardTooMuchCandy(Player player){
+        player.setMoney(player.getMoney()-2);
+        directGUICommands.changeBalanceGUI(player);
+    }
+
+    /**
+     * Chancecard 14: It's your birthday, receive 1 money from each of the other players.
+     * This one sets current players money to player.getmoney() (current amount)+ the lenght of the player.getPlayers() array
+     * that gives 1 money too much, and we correct for that in the for loop, where it retracts 1 money from EACH player (also yourself).
+     * You'll receive money before the money is retracted, so you can't go bankrupt from landing on this field.
+     * @param player
+     */
+    public void chanceCardBirthday(Player player){
+
+        player.setMoney(player.getMoney()+player.getPlayers().length);
+        for (int i=0; i<player.getPlayers().length;i++) {
+            player.getPlayers()[i].setMoney(player.getPlayers()[i].getMoney()-1);
+            directGUICommands.changeBalanceGUI(player.getPlayers()[i]);
+        }
+
+    }
+
+    /**
+     * Chancecard 15. You did all your homework. Receive +2 money from the bank. Bank has no account, so we just add +2 to money attribute on the player object.
+     * @param player
+     */
+    public void chanceCardGoodBoyHomeWork(Player player) {
+        player.setMoney(player.getMoney()+2);
+        directGUICommands.changeBalanceGUI(player);
     }
 
 }
