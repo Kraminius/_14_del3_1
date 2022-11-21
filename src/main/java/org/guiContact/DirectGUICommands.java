@@ -57,7 +57,7 @@ public class DirectGUICommands {
 
         //Prints roll and player id to console in console
         System.out.println("Roll: " + ourRoll);
-        System.out.println("PlayerID: " + player.getID());
+        System.out.println("PlayerID: " + player.getColor());
 
     }
 

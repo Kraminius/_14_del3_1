@@ -63,6 +63,7 @@ public class ChanceField extends Fields {
             case 10:
                 break;
             case 11:
+                chanceCardTooMuchCandy(player);
                 break;
             case 12:
                 break;
@@ -73,7 +74,7 @@ public class ChanceField extends Fields {
                 chanceCardBirthday(player);
                 break;
             case 15:
-                goodBoyHomeWork(player);
+                chanceCardGoodBoyHomeWork(player);
                 break;
         }
 
@@ -117,6 +118,15 @@ public class ChanceField extends Fields {
     }
 
     /**
+     * You ate too much candy. Retracts -2 money from current balance of current player.
+     * @param player
+     */
+    public void chanceCardTooMuchCandy(Player player){
+        player.setMoney(player.getMoney()-2);
+        directGUICommands.changeBalanceGUI(player);
+    }
+
+    /**
      * Chancecard 14: It's your birthday, receive 1 money from each of the other players.
      * This one sets current players money to player.getmoney() (current amount)+ the lenght of the player.getPlayers() array
      * that gives 1 money too much, and we correct for that in the for loop, where it retracts 1 money from EACH player (also yourself).
@@ -137,7 +147,7 @@ public class ChanceField extends Fields {
      * Chancecard 15. You did all your homework. Receive +2 money from the bank. Bank has no account, so we just add +2 to money attribute on the player object.
      * @param player
      */
-    public void goodBoyHomeWork(Player player) {
+    public void chanceCardGoodBoyHomeWork(Player player) {
         player.setMoney(player.getMoney()+2);
         directGUICommands.changeBalanceGUI(player);
     }
