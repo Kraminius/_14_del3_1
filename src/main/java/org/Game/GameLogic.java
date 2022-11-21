@@ -99,4 +99,9 @@ public class GameLogic {
     public boolean isEndGame() {
         return endGame;
     }
+
+    public void playerIsInPrison(){
+
+    }
+
 }
