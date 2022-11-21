@@ -12,16 +12,7 @@ public class GameLogic {
     private boolean endGame = false;
 
     public void MovePlayer(Player player){
-        /*
-        if(player.getPosition() == Prison && player.getJail()){
-            if(player.getGOOJCard()) player.setGOOJCard(false);
-            else player.setMoney(player.getMoney() - 1);
 
-            player.setJail(false);
-        }
-
-
-        */
         RollDice rollDice = new RollDice();
 
         //Rolls
@@ -39,10 +30,7 @@ public class GameLogic {
 
 
         player.setPosition(nextFieldPlacement);
-/*      if(nextFieldPlacement == GoToPrison){
-            nextFieldPlacement = Prison;
-            player.setJail(true);
-        */
+
 
 
         directGUICommands.MovePlayer(player, nextFieldPlacement, ourRoll);
@@ -113,8 +101,14 @@ public class GameLogic {
         return endGame;
     }
 
-    public void playerIsInPrison(){
+    public void playerIsInPrison(Player player){
 
+        if(player.getJail()){
+            if(player.getGOOJCard()) player.setGOOJCard(false);
+            else player.setMoney(player.getMoney() - 1);
+
+            player.setJail(false);
+        }
     }
 
 }
