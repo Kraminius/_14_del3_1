@@ -12,9 +12,12 @@ public class Prison extends Fields{
     public void turnAction(Player player) {
         //Skal stå hvad der sker når man ryger i fængsel
 
+
         player.setPosition(6); //Prison Location
         directguicommands.MovePlayer(player, 6, 1);
         player.setJail(true);
+
+
 
 
 
