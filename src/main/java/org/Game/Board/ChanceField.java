@@ -1,15 +1,22 @@
 package org.Game.Board;
 
-public class ChanceField extends PropertyFields {
+import org.Game.Player.Player;
+
+public class ChanceField extends Fields {
 
 
-    public ChanceField(int Id, int fieldRent) {
-        super(Id, fieldRent);
+    public ChanceField() {
+
     }
 
     public int buyableFieldID() {
         int fieldID = 0;
 
         return fieldID;
+    }
+
+    @Override
+    public void turnAction(Player player) {
+
     }
 }
