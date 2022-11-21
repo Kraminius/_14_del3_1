@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Changed rest of fields">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Player can be a criminal yay">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/ChanceCards/ChanceCardText.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/ChanceCards/ChanceCardText.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/Game/TC3_MoneyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Game/TC3_MoneyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/GameLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="e831b597-5f1f-425d-a1f6-76e9f7e9fa47" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,11 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tobia/OneDrive/DTU/1. Semester/Introduktion til Programmering/_14_del3_1/src/main/java/org/Game/Dice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "last_opened_file_path": "C:/Users/tobia/Downloads/pppp",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -61,19 +58,6 @@
       <recent name="C:\Users\tobia\OneDrive\DTU\1. Semester\Introduktion til Programmering\_14_del3_1\src\main\java\org\Game\Dice" />
       <recent name="C:\Users\tobia\OneDrive\DTU\1. Semester\Introduktion til Programmering\_14_del3_1\src\GUI" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -85,7 +69,6 @@
       <updated>1667830413728</updated>
       <workItem from="1667830628147" duration="213000" />
       <workItem from="1667830863728" duration="1283000" />
-      <workItem from="1669042829510" duration="984000" />
     </task>
     <task id="LOCAL-00001" summary="GUI Import">
       <created>1667831096254</created>
@@ -136,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668077677745</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Udkommenteret mere fra Cards og Functionality">
+      <created>1669032614012</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669032614012</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added booleans to Player and some soudo Code for a system for going to prison">
+      <created>1669037412924</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669037412924</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +159,8 @@
     <MESSAGE value="Changed skateparken + swimmingpoolen" />
     <MESSAGE value="Changed spillehallen, biografen, and free parking." />
     <MESSAGE value="Changed rest of fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed rest of fields" />
+    <MESSAGE value="Udkommenteret mere fra Cards og Functionality" />
+    <MESSAGE value="Added booleans to Player and some soudo Code for a system for going to prison" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added booleans to Player and some soudo Code for a system for going to prison" />
   </component>
 </project>
