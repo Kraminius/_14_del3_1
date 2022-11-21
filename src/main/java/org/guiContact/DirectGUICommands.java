@@ -167,7 +167,7 @@ public class DirectGUICommands {
     }
 
     public void winningGUI(Player player){
-        gui.showMessage("Congratulation Player " + player.getID()+ "!! You won the game!");
+        gui.showMessage("Congratulation Player " + player.getColor()+ "!! You won the game!");
     }
 
     public void chanceCardGUI(String message){

@@ -141,11 +141,9 @@ public class GameLogic {
                 if(player.getPlayers()[i].getMoney()>player.getPlayers()[j].getMoney()){
                     temp = player.getPlayers()[i];
                     player.getPlayers()[i] = player.getPlayers()[j];
-
                     player.getPlayers()[j] = temp;
                 }
             }
-
         }
 
         temp = player.getPlayers()[player.getPlayers().length-1];
