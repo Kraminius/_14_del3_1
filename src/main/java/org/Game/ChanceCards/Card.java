@@ -5,7 +5,6 @@ import java.io.Serializable;
 public class Card {
     private int id;
     private String description;
-    private String function;
 
     public Card (int ID, String desc){
         this.description = desc;
@@ -30,11 +29,11 @@ public class Card {
         this.description = description;
     }
 
-    public String getFunction() {
-        return function;
-    }
-
-    public void setFunction(String function) {
-        this.function = function;
+    @Override
+    public String toString() {
+        return "Card{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

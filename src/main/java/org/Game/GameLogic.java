@@ -32,6 +32,7 @@ public class GameLogic {
         do{
             //Finds current player
             turnPlayer = player.NextPlayer();
+            turnPlayer.setPlayers(player.getPlayers());
             //Checks if player is in jail
             playerIsInPrison(turnPlayer);
             if(!isEndGame()){
@@ -172,6 +173,7 @@ public class GameLogic {
 
     public void processTurn(Player player){
         Fields fields = board.getBoard()[player.getPosition()];
+        fields = board.getBoard()[3];
         fields.turnAction(player);
     }
 

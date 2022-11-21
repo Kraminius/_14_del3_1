@@ -31,4 +31,11 @@ public class Deck {
     public List<Card> getCards() {
         return cards;
     }
+
+    @Override
+    public String toString() {
+        return "Deck{" +
+                "cards=" + cards +
+                '}';
+    }
 }

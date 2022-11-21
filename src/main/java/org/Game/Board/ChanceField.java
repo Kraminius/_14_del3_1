@@ -1,10 +1,12 @@
 package org.Game.Board;
 
 import org.Game.ChanceCards.Deck;
+import org.Game.GameLogic;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
 
 public class ChanceField extends Fields {
+
 
 
     private int index;
@@ -27,16 +29,20 @@ public class ChanceField extends Fields {
 
         int currentCardId = deck.getCards().get(index).getId();
 
+
+        System.out.println(currentCardId);
+        //Shows message on center card
+        directGUICommands.chanceCardGUI(deck.getCards().get(index).getDescription());
+
         switch (currentCardId){
             case 0:
-                if (Skateparken.getInstance().player == null){
-                    freeProperty(player);
-                }
-                else {
-                    Skateparken.getInstance().payRent(player);
-                }
+                //Pick property
+                String property = dropDownMenu("Skaterparken","Pizzariaet");
+                Fields fields = whatIsPick(property);
+                //freePropertyOrRent(player, );
                 break;
             case 1:
+
                 break;
             case 2:
                 break;
@@ -78,10 +84,33 @@ public class ChanceField extends Fields {
     }
 
 
-    public void freeProperty(Player player){
-        Skateparken.getInstance().setPlayer(player);
-        directGUICommands.ownedPropertyGUI(player, Skateparken.getInstance().fieldID);
-        directGUICommands.changeBalanceGUI(player);
+    public void freePropertyOrRent(Player player, PropertyFields propertyFields){
+        if(propertyFields == null){
+            propertyFields.setPlayer(player);
+            directGUICommands.ownedPropertyGUI(player, Skateparken.getInstance().fieldID);
+            directGUICommands.changeBalanceGUI(player);
+        }
+        else {
+            Skateparken.getInstance().payRent(player);
+        }
+
+    }
+
+    public String dropDownMenu(String property1, String property2){
+        return directGUICommands.pickProperty(property1,property2);
+    }
+
+    public PropertyFields whatIsPick(String property){
+
+        switch (property){
+            case "Skaterparken":
+                return Skateparken.getInstance();
+            case "Pizzariaet":
+                return Pizzariaet.getInstance();
+        }
+
+
+        return null;
     }
 
 }

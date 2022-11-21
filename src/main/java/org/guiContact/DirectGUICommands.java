@@ -6,6 +6,7 @@ import gui_fields.GUI_Ownable;
 import gui_fields.GUI_Player;
 import gui_main.GUI;
 import org.Game.Board.Instantiering;
+import org.Game.Board.PropertyFields;
 import org.Game.Player.Player;
 import org.Game.Player.PlayerAmount;
 
@@ -167,6 +168,19 @@ public class DirectGUICommands {
 
     public void winningGUI(Player player){
         gui.showMessage("Congratulation Player " + player.getID()+ "!! You won the game!");
+    }
+
+    public void chanceCardGUI(String message){
+
+        gui.displayChanceCard(message);
+
+    }
+
+    public String pickProperty(String property1, String property2){
+
+        String userSelection = gui.getUserSelection("Pick property", property1, property2);
+        return userSelection;
+
     }
 
 }
