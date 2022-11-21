@@ -127,7 +127,7 @@ public class ChanceField extends Fields {
 
         player.setMoney(player.getMoney()+player.getPlayers().length);
         for (int i=0; i<player.getPlayers().length;i++) {
-            player.getPlayers()[i].setMoney(player.getMoney()-1);
+            player.getPlayers()[i].setMoney(player.getPlayers()[i].getMoney()-1);
             directGUICommands.changeBalanceGUI(player.getPlayers()[i]);
         }
 
