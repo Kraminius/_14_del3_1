@@ -26,6 +26,9 @@ public class Cards {
     }
 
      */
+
+
+
     public Card pullCard(){
         Random rnd = new Random();
         if(!hasShuffled){
