@@ -23,6 +23,7 @@ class TC3_MoneyTest {
 
         assertEquals(expected, player.getMoney(),
                 "checks that money can be earned");
+        System.out.println("Penge efter test: " + player.getMoney() + " Forventet penge: " + expected);
     }
 
     @Test
@@ -31,7 +32,7 @@ class TC3_MoneyTest {
 
         Player player = new Player();
         int expected;
-        int startMoney = 5, lostMoney = 7;
+        int startMoney = 7, lostMoney = 5;
         player.setMoney(startMoney);
         player.setMoney(player.getMoney() - lostMoney);
 
@@ -40,6 +41,7 @@ class TC3_MoneyTest {
 
         assertEquals(expected, player.getMoney(),
                 "checks that money can be lost");
+        System.out.println("Penge efter test: " + player.getMoney() + " Forventet penge: " + expected);
     }
 
     @Test
@@ -58,6 +60,7 @@ class TC3_MoneyTest {
 
         assertEquals(expected, player.getMoney(),
                 "checks that money can reach zero");
+        System.out.println("Penge efter test: " + player.getMoney() + " Forventet penge: " + expected);
     }
 
     @Test
@@ -76,6 +79,7 @@ class TC3_MoneyTest {
 
         assertEquals(expected, player.getMoney(),
                 "checks that money can be negative");
+        System.out.println("Penge efter test: " + player.getMoney() + " Forventet penge: " + expected);
     }
 
 
