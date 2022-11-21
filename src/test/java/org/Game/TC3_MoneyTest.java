@@ -1,4 +1,4 @@
-package org.Test;
+package org.Game;
 
 import org.Game.Player.*;
 import org.junit.jupiter.api.DisplayName;

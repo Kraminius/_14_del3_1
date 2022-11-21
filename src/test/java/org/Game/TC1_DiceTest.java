@@ -1,4 +1,4 @@
-package org.Test;
+package org.Game;
 
 import org.Game.Die.*;
 import org.junit.jupiter.api.DisplayName;
