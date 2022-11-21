@@ -166,7 +166,6 @@ public class GameLogic {
             else{
                 player.setMoney(player.getMoney()-1);
                 player.setJail(false);
-                endGameCondition(player);
             }
         }
     }
