@@ -39,7 +39,7 @@ public class Cards {
         }
         return cards[0];
     }
-   /* public void chanceCard(Player player){
+    /* public void chanceCard(Player player){
         Card newCard = pullCard();
         Functionality func = new Functionality();
         if(func.doFunction(newCard.getId(), player)){ //Does the cards actions, returns true if card is put back. returns false if player keeps it.

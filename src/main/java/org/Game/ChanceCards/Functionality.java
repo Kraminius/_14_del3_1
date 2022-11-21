@@ -6,18 +6,18 @@ import org.guiContact.DirectGUICommands;
 public class Functionality {
     Descriptions desc = new Descriptions();
     DirectGUICommands gui = DirectGUICommands.getInstance();
-
-   /* public boolean doFunction(int id, Player player){
+/*
+    public boolean doFunction(int id, Player player){
         boolean returnCard = true;
         int position = player.getPosition();
-       String[] descriptions = desc.getCardInfo();
+        String[] descriptions = desc.getCardInfo();
         switch (id){
             case 0:
                 //Show the description descriptions[0];
                 //Find navnene på begge felter
                 String navn1 = "";
                 String navn2 = "";
-                switch (gui.TwoChoiceMessage([0], navn1, navn2)){
+                switch (gui.TwoChoiceMessage(descriptions[0], navn1, navn2)){
                     case "1":
                         //Ryk spilleren til navn1
                         //Enten betal leje eller få felt uden at betale.
@@ -107,10 +107,11 @@ public class Functionality {
                 System.out.println("Pulled card index is outside of the array of descriptions and functionality");
                 break;
 
-
-
         }
         return returnCard;
-
-        */
     }
+
+*/
+
+
+}
