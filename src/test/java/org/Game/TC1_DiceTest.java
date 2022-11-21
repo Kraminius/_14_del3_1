@@ -1,4 +1,4 @@
-package org.Test;
+package org.Game;
 
 import org.Game.Die.*;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +10,7 @@ class TC1_DiceTest {
 
     @Test
     @DisplayName("Dice is random (within 5% of expected)")
-    void testAddMoney() {
+    void testDice() {
         int rollNumber = 10000; //Hvor mange gange terningen rulles
         int value = 0;
         //Mulige terninge øjne
