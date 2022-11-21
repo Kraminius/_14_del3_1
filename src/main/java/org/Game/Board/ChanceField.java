@@ -91,10 +91,13 @@ public class ChanceField extends Fields {
                 fullTurn(player, properties);
                 break;
             }
+            //Card 8;Ryk frem til start. Modtag 2 penge
             case 8:
                 break;
+            //Card 9;Ryk op til 5 felter frem.
             case 9:
                 break;
+            //Card 10;Ryk 1 felt frem, eller tag et chancekort mere.
             case 10:
                 break;
             case 11:
@@ -102,9 +105,10 @@ public class ChanceField extends Fields {
                 break;
             case 12:
                 break;
+            //Card 13;Ryk frem til Strandpromenaden.
             case 13:
-                break;
 
+                break;
             case 14:
                 chanceCardBirthday(player);
                 break;
