@@ -34,14 +34,17 @@ public class GameLogic {
             turnPlayer = player.NextPlayer();
             //Checks if player is in jail
             playerIsInPrison(turnPlayer);
-            //Creates box to click for rolling dice
-            directGUICommands.StartTurn(turnPlayer);
-            //Moves player and roll dice
-            MovePlayer(turnPlayer);
-            //Field response
-            processTurn(turnPlayer);
-            //Checks end condition
-            endGameCondition(player);
+            if(!isEndGame()){
+                //Creates box to click for rolling dice
+                directGUICommands.StartTurn(turnPlayer);
+                //Moves player and roll dice
+                MovePlayer(turnPlayer);
+                //Field response
+                processTurn(turnPlayer);
+                //Checks end condition
+                endGameCondition(player);
+
+            }
 
         }while(!isEndGame());
 
@@ -155,12 +158,15 @@ public class GameLogic {
     }
 
     public void playerIsInPrison(Player player){
-        if(player.getJail() == true){
-            if(player.getGOOJCard() == true){
+        if(player.getJail()){
+            if(player.getGOOJCard()){
                 player.setGOOJCard(false);
+                player.setJail(false);
             }
             else{
                 player.setMoney(player.getMoney()-1);
+                player.setJail(false);
+                endGameCondition(player);
             }
         }
     }
