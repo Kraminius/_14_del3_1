@@ -1,5 +1,7 @@
 package org.Game;
 
+import org.Game.Board.Fields;
+import org.Game.Board.InidBoard;
 import org.Game.Board.Picker;
 import org.Game.Die.RollDice;
 import org.Game.Player.Player;
@@ -9,10 +11,21 @@ public class GameLogic {
 
     DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
 
+    InidBoard board = new InidBoard();
+
     private boolean endGame = false;
 
     public void MovePlayer(Player player){
+        /*
+        if(player.getPosition() == Prison && player.getJail()){
+            if(player.getGOOJCard()) player.setGOOJCard(false);
+            else player.setMoney(player.getMoney() - 1);
 
+            player.setJail(false);
+        }
+
+
+        */
         RollDice rollDice = new RollDice();
 
         //Rolls
@@ -30,7 +43,10 @@ public class GameLogic {
 
 
         player.setPosition(nextFieldPlacement);
-
+/*      if(nextFieldPlacement == GoToPrison){
+            nextFieldPlacement = Prison;
+            player.setJail(true);
+        */
 
 
         directGUICommands.MovePlayer(player, nextFieldPlacement, ourRoll);
@@ -102,13 +118,19 @@ public class GameLogic {
     }
 
     public void playerIsInPrison(Player player){
-
-        if(player.getJail()){
-            if(player.getGOOJCard()) player.setGOOJCard(false);
-            else player.setMoney(player.getMoney() - 1);
-
-            player.setJail(false);
+        if(player.getJail() == true){
+            if(player.getGOOJCard() == true){
+                player.setGOOJCard(false);
+            }
+            else{
+                player.setMoney(player.getMoney()-1);
+            }
         }
+    }
+
+    public void processTurn(Player player){
+        Fields fields = board.getBoard()[player.getPosition()];
+        fields.turnAction(player);
     }
 
 }
