@@ -68,7 +68,9 @@ public class ChanceField extends Fields {
                 break;
             case 13:
                 break;
+
             case 14:
+                chanceCardBirthday(player);
                 break;
             case 15:
                 break;
@@ -111,6 +113,19 @@ public class ChanceField extends Fields {
 
 
         return null;
+    }
+
+    /**
+     * Chancecard 14: It's your birthday, receive 1 money from each of the other players.
+     * This one sets current players money to player.getmoney() (current amount)+ the lenght of the player.getPlayers() array
+     * that gives 1 money too much, and we correct for that in the for loop, where it retracts 1 money from EACH player (also yourself).
+     * You'll receive money before the money is retracted, so you can't go bankrupt from landing on this field.
+     * @param player
+     */
+    public void chanceCardBirthday(Player player){
+        player.setMoney(player.getMoney()+player.getPlayers().length);
+        for (int i=0; i<player.getPlayers().length;i++)
+            player.getPlayers()[i].setMoney(player.getMoney()-1);
     }
 
 }
