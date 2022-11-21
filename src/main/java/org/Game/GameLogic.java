@@ -73,6 +73,9 @@ public class GameLogic {
         rollDice.Roll();
         int ourRoll = rollDice.getOurRolls();
 
+        //Show dice roll in gui
+        directGUICommands.rollDiceGUI(ourRoll);
+
         //Finds players next position
         int nextFieldPlacement = player.getPosition() + ourRoll;
 
@@ -90,7 +93,7 @@ public class GameLogic {
         */
 
 
-        directGUICommands.MovePlayer(player, nextFieldPlacement, ourRoll);
+        directGUICommands.MovePlayer(player, nextFieldPlacement);
 
     }
 

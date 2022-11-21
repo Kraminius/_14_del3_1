@@ -14,7 +14,7 @@ public class Prison extends Fields{
 
 
         player.setPosition(6); //Prison Location
-        directguicommands.MovePlayer(player, 6, 1);
+        directguicommands.MovePlayer(player, 6);
         player.setJail(true);
 
 

@@ -61,5 +61,7 @@ public abstract class PropertyFields extends Fields {
 
     }
 
-
+    public int getFieldID() {
+        return fieldID;
+    }
 }

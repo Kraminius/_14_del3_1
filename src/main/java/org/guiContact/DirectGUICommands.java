@@ -44,7 +44,7 @@ public class DirectGUICommands {
     }
 
     //This method moves a player
-    public void MovePlayer(Player player, int nextFieldPlacement, int ourRoll) {
+    public void MovePlayer(Player player, int nextFieldPlacement) {
 
 
         //Which field player has landed on
@@ -53,11 +53,7 @@ public class DirectGUICommands {
         gui_players[player.getID() - 1].getCar().setPosition(fields);
 
 
-        gui.setDie(ourRoll);
 
-        //Prints roll and player id to console in console
-        System.out.println("Roll: " + ourRoll);
-        System.out.println("PlayerID: " + player.getID());
 
     }
 
@@ -176,10 +172,28 @@ public class DirectGUICommands {
 
     }
 
-    public String pickProperty(String property1, String property2){
+    public String pickProperty(String[] property){
 
-        String userSelection = gui.getUserSelection("Pick property", property1, property2);
+        String userSelection = null;
+        int temp = property.length;
+
+        if(temp == 4){
+            userSelection = gui.getUserSelection("Pick property", property[0],property[1], property[2], property[3]);
+        }
+        else if(temp == 2){
+            userSelection = gui.getUserSelection("Pick property", property[0],property[1]);
+        }
+        else if(temp ==1){
+            userSelection = gui.getUserSelection("Pick property", property[0]);
+        }
+
+
         return userSelection;
+
+    }
+
+    public void rollDiceGUI(int ourRoll){
+        gui.setDie(ourRoll);
 
     }
 
