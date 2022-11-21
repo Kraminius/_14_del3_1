@@ -51,6 +51,9 @@ public abstract class PropertyFields extends Fields {
 
     }
 
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 
     @Override
     public void turnAction(Player player) {

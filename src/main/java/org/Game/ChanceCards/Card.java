@@ -7,11 +7,10 @@ public class Card {
     private String description;
     private String function;
 
-    public Card CreateCard(int ID, String desc, String cardFunction){
-        setDescription(desc);
-        setFunction(cardFunction);
-        setId(ID);
-        return this;
+    public Card (int ID, String desc){
+        this.description = desc;
+        this.id = ID;
+
     }
 
 

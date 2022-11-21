@@ -5,9 +5,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Descriptions {
-    public String fileReader(int index){
-        String[] data = ReadCol(1,"src/main/java/org/Game/ChanceCards/ChanceCardText.csv", ";");
-        return data[index];
+    public String[] fileReader(int col){
+        String[] data = ReadCol(col,"src/main/java/org/Game/ChanceCards/ChanceCardText.csv", ";");
+        return data;
     }
     public static String[] ReadCol(int col, String filepath, String delimiter) {
         String data[];
