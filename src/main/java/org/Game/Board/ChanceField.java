@@ -134,7 +134,7 @@ public class ChanceField extends Fields {
             directGUICommands.changeBalanceGUI(player);
         }
         else {
-            Skateparken.getInstance().payRent(player);
+            propertyFields.payRent(player);
         }
         //Moves player
         movePlayer(player, propertyFields.getFieldID());
@@ -150,7 +150,7 @@ public class ChanceField extends Fields {
     public PropertyFields whatIsPick(String property){
 
         switch (property){
-            case "Skaterparken":
+            case "Skateparken":
                 return Skateparken.getInstance();
             case "Swimmingpool":
                 return Swimmingpool.getInstance();
