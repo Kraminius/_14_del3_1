@@ -46,7 +46,7 @@ public class GameLogic {
                 endGameCondition(player);
 
             }
-
+            player.setPlayers(turnPlayer.getPlayers());
         }while(!isEndGame());
 
         whoWon(player);
