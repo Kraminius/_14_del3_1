@@ -38,7 +38,7 @@ public class DirectGUICommands {
     //Click a button to roll
     public void StartTurn(Player player){
 
-        gui.getUserButtonPressed("Player " + player.getID() + " turn! Click button to roll!","Roll");
+        gui.getUserButtonPressed("It is " + player.getColor() + " car's turn! Click button to roll!","Roll");
 
     }
 
@@ -70,7 +70,7 @@ public class DirectGUICommands {
         for(int i =0; i < ClassPlayer.getPlayers().length; i++){
             GUI_Car car = new GUI_Car();
             car.setPrimaryColor(colors[i]);
-            GUI_Player guiplayer = new GUI_Player("Player" + (i+1),ClassPlayer.getPlayers()[i].getMoney(),car);
+            GUI_Player guiplayer = new GUI_Player(ClassPlayer.getPlayers()[i].getColor() ,ClassPlayer.getPlayers()[i].getMoney(),car);
             gui.addPlayer(guiplayer);
 
             GUI_Field fields = gui.getFields()[0];

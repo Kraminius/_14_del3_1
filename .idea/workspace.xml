@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07555813-253a-498b-81f1-2329d7fe93df" name="Changes" comment="Player can be a criminal yay">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/GameLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Game/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Game/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/guiContact/DirectGUICommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/guiContact/DirectGUICommands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669037412924</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Player can be a criminal yay">
+      <created>1669045355222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669045355222</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +169,7 @@
     <MESSAGE value="Changed rest of fields" />
     <MESSAGE value="Udkommenteret mere fra Cards og Functionality" />
     <MESSAGE value="Added booleans to Player and some soudo Code for a system for going to prison" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added booleans to Player and some soudo Code for a system for going to prison" />
+    <MESSAGE value="Player can be a criminal yay" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player can be a criminal yay" />
   </component>
 </project>
