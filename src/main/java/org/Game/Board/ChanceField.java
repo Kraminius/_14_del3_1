@@ -71,9 +71,9 @@ public class ChanceField extends Fields {
 
             case 14:
                 chanceCardBirthday(player);
-
                 break;
             case 15:
+                goodBoyHomeWork(player);
                 break;
         }
 
@@ -131,6 +131,15 @@ public class ChanceField extends Fields {
             directGUICommands.changeBalanceGUI(player.getPlayers()[i]);
         }
 
+    }
+
+    /**
+     * Chancecard 15. You did all your homework. Receive +2 money from the bank. Bank has no account, so we just add +2 to money attribute on the player object.
+     * @param player
+     */
+    public void goodBoyHomeWork(Player player) {
+        player.setMoney(player.getMoney()+2);
+        directGUICommands.changeBalanceGUI(player);
     }
 
 }
