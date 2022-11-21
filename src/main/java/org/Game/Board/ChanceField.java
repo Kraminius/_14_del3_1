@@ -18,5 +18,10 @@ public class ChanceField extends Fields {
     @Override
     public void turnAction(Player player) {
 
+
+
+
+
+
     }
 }

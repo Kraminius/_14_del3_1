@@ -9,7 +9,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        DirectGUICommands guiCommands = DirectGUICommands.getInstance();
+        GameLogic gameLogic = new GameLogic();
+
+
+        /*DirectGUICommands guiCommands = DirectGUICommands.getInstance();
         GameLogic gameLogic = new GameLogic();
         Player player = new Player();
         player.AmountOfPlayers(guiCommands.PlayerAmount());
@@ -33,7 +36,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
 
-
+*/
 
     }
     /*public static void CardsTest(Player player){

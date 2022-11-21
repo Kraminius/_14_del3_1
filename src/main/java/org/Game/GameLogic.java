@@ -15,6 +15,43 @@ public class GameLogic {
 
     private boolean endGame = false;
 
+
+    public GameLogic(){
+
+        //Creates players
+        Player player = new Player();
+        player.AmountOfPlayers(directGUICommands.PlayerAmount());
+        //Start money
+        startMoney(player);
+        //Creates GUI players
+        directGUICommands.AddPlayers(player);
+        //Creates empty player object
+        Player turnPlayer;
+
+        //Game Loop
+        do{
+            //Finds current player
+            turnPlayer = player.NextPlayer();
+            //Checks if player is in jail
+            playerIsInPrison(turnPlayer);
+            //Creates box to click for rolling dice
+            directGUICommands.StartTurn(turnPlayer);
+            //Moves player and roll dice
+            MovePlayer(turnPlayer);
+            //Field response
+            processTurn(turnPlayer);
+            //Checks end condition
+            endGameCondition(player);
+
+        }while(!isEndGame());
+
+        whoWon(player);
+
+
+    }
+
+
+
     public void MovePlayer(Player player){
         /*
         if(player.getPosition() == Prison && player.getJail()){
