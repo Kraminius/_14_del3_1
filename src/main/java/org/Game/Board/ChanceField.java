@@ -71,6 +71,7 @@ public class ChanceField extends Fields {
 
             case 14:
                 chanceCardBirthday(player);
+
                 break;
             case 15:
                 break;
@@ -123,9 +124,13 @@ public class ChanceField extends Fields {
      * @param player
      */
     public void chanceCardBirthday(Player player){
+
         player.setMoney(player.getMoney()+player.getPlayers().length);
-        for (int i=0; i<player.getPlayers().length;i++)
+        for (int i=0; i<player.getPlayers().length;i++) {
             player.getPlayers()[i].setMoney(player.getMoney()-1);
+            directGUICommands.changeBalanceGUI(player.getPlayers()[i]);
+        }
+
     }
 
 }
