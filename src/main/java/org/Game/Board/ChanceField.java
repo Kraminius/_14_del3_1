@@ -154,7 +154,7 @@ public class ChanceField extends Fields {
     public PropertyFields whatIsPick(String property){
 
         switch (property){
-            case "Skateparken":
+            case "Skaterparken":
                 return Skateparken.getInstance();
             case "Swimmingpool":
                 return Swimmingpool.getInstance();
