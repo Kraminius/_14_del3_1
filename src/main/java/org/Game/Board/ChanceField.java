@@ -13,7 +13,6 @@ public class ChanceField extends Fields {
     private Deck deck = new Deck();
 
     private DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
-
     public ChanceField() {
 
     }
@@ -91,8 +90,10 @@ public class ChanceField extends Fields {
                 fullTurn(player, properties);
                 break;
             }
-            //Card 8;Ryk frem til start. Modtag 2 penge
+
             case 8:
+                didPlayerPassStart(player, 0);
+                movePlayer(player, 0);
                 break;
             //Card 9;Ryk op til 5 felter frem.
             case 9:
@@ -107,7 +108,10 @@ public class ChanceField extends Fields {
                 break;
             //Card 13;Ryk frem til Strandpromenaden.
             case 13:
-
+                PropertyFields propertyFields = Strandpromenaden.getInstance();
+                didPlayerPassStart(player, 23);
+                movePlayer(player, 23);
+                propertyFields.buyableOrRent(player);
                 break;
             case 14:
                 chanceCardBirthday(player);
@@ -237,4 +241,17 @@ public class ChanceField extends Fields {
         directGUICommands.changeBalanceGUI(player);
     }
 
+    /**
+     * If players current position is higher than the index they will move to, they will move over start, and gets +2 money.
+     * @param player
+     * @param index
+     */
+    public void didPlayerPassStart(Player player, int index){
+        if (player.getPosition()>index){
+            player.setMoney(player.getMoney()+2);
+        }
+    }
+
 }
+
+
