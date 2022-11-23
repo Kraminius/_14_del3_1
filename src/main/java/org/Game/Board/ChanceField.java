@@ -95,28 +95,25 @@ public class ChanceField extends Fields {
                 didPlayerPassStart(player, 0);
                 movePlayer(player, 0);
                 break;
-            //Card 9;Ryk op til 5 felter frem.
-            case 9:
-                break;
             //Card 10;Ryk 1 felt frem, eller tag et chancekort mere.
 
-            case 10:
+            case 9:
                 break;
-            case 11:
+            case 10:
                 chanceCardTooMuchCandy(player);
                 break;
-            case 12:
+            case 11:
                 break;
-            case 13:
+            case 12:
                 PropertyFields propertyFields = Strandpromenaden.getInstance();
                 didPlayerPassStart(player, 23);
                 movePlayer(player, 23);
                 propertyFields.buyableOrRent(player);
                 break;
-            case 14:
+            case 13:
                 chanceCardBirthday(player);
                 break;
-            case 15:
+            case 14:
                 chanceCardGoodBoyHomeWork(player);
                 break;
         }
