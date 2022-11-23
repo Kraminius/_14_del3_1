@@ -2,7 +2,6 @@ package org.Game;
 
 import org.Game.Board.Fields;
 import org.Game.Board.InidBoard;
-import org.Game.Board.Picker;
 import org.Game.ChanceCards.Deck;
 import org.Game.Die.RollDice;
 import org.Game.Player.Player;

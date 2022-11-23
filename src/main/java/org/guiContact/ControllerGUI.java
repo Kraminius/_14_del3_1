@@ -6,22 +6,20 @@ import gui_fields.GUI_Ownable;
 import gui_fields.GUI_Player;
 import gui_main.GUI;
 import org.Game.Board.Instantiering;
-import org.Game.Board.PropertyFields;
 import org.Game.Player.Player;
-import org.Game.Player.PlayerAmount;
 
 import java.awt.*;
 
-public class DirectGUICommands {
+public class ControllerGUI {
 
-    private static DirectGUICommands directGUICommands;
+    private static ControllerGUI ControllerGUI;
     private static GUI gui;
     private GUI_Player[] gui_players;
 
     private Color[] colors = new Color[4];
 
 
-    private DirectGUICommands(){
+    private ControllerGUI(){
 
         gui = getInstanceGUI();
         colors[0] = Color.BLACK;
@@ -114,12 +112,12 @@ public class DirectGUICommands {
         gui.showMessage("");
     }
 
-    public static DirectGUICommands getInstance(){
-        if(directGUICommands == null){
-            directGUICommands = new DirectGUICommands();
+    public static ControllerGUI getInstance(){
+        if(ControllerGUI == null){
+            ControllerGUI = new ControllerGUI();
         }
 
-        return directGUICommands;
+        return ControllerGUI;
     }
 
     /**
@@ -129,16 +127,16 @@ public class DirectGUICommands {
     public int PlayerAmount(){
         String chosenSelction = gui.getUserSelection("Vælg antal spillere","2", "3", "4");
         if(chosenSelction == "2"){
-          PlayerAmount playerNumber = new PlayerAmount(2);
-            return playerNumber.getPlayerAmount();
+
+            return 2;
         }
         else if(chosenSelction == "3"){
-            PlayerAmount playerNumber = new PlayerAmount(3);
-            return playerNumber.getPlayerAmount();
+
+            return 3;
         }
         else if(chosenSelction == "4"){
-            PlayerAmount playerNumber = new PlayerAmount(4);
-            return playerNumber.getPlayerAmount();
+
+            return 4;
         }
         else{
             System.out.println("Failure to understand returned answer");

@@ -1,11 +1,8 @@
 package org.Game.Board;
 
 import org.Game.ChanceCards.Deck;
-import org.Game.GameLogic;
 import org.Game.Player.Player;
-import org.guiContact.DirectGUICommands;
-
-import java.text.NumberFormat;
+import org.guiContact.ControllerGUI;
 
 public class ChanceField extends Fields {
 
@@ -14,7 +11,7 @@ public class ChanceField extends Fields {
     private int index;
     private Deck deck = new Deck();
 
-    private DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
+    private ControllerGUI controllerGUI = ControllerGUI.getInstance();
     public ChanceField() {
 
     }
@@ -33,7 +30,7 @@ public class ChanceField extends Fields {
 
         System.out.println(currentCardId);
         //Shows message on center card
-        directGUICommands.chanceCardGUI(deck.getCards().get(index).getDescription());
+        controllerGUI.chanceCardGUI(deck.getCards().get(index).getDescription());
 
         //Declare String array for properties
 
@@ -128,8 +125,8 @@ public class ChanceField extends Fields {
     public void freePropertyOrRent(Player player, PropertyFields propertyFields){
         if(propertyFields.player == null){
             propertyFields.setPlayer(player);
-            directGUICommands.ownedPropertyGUI(player, propertyFields.fieldID);
-            directGUICommands.changeBalanceGUI(player);
+            controllerGUI.ownedPropertyGUI(player, propertyFields.fieldID);
+            controllerGUI.changeBalanceGUI(player);
         }
         else {
             propertyFields.payRent(player);
@@ -140,7 +137,7 @@ public class ChanceField extends Fields {
     }
 
     public String dropDownMenuProperty(String[] property1){
-        return directGUICommands.pickProperty(property1);
+        return controllerGUI.pickProperty(property1);
     }
 
 
@@ -188,7 +185,7 @@ public class ChanceField extends Fields {
 
     public void movePlayer(Player player, int index){
         player.setPosition(index);
-        directGUICommands.MovePlayer(player, index);
+        controllerGUI.MovePlayer(player, index);
     }
 
     public void fullTurn(Player player, String[] properties){
@@ -206,13 +203,13 @@ public class ChanceField extends Fields {
      */
     public void chanceCardTooMuchCandy(Player player){
         player.setMoney(player.getMoney()-2);
-        directGUICommands.changeBalanceGUI(player);
+        controllerGUI.changeBalanceGUI(player);
     }
 
     public void chanceCardMoveToStrandpromenaden(Player player){
 
         player.setPosition(23);
-        directGUICommands.MovePlayer(player, 23);
+        controllerGUI.MovePlayer(player, 23);
     }
 
     /**
@@ -227,7 +224,7 @@ public class ChanceField extends Fields {
         player.setMoney(player.getMoney()+player.getPlayers().length);
         for (int i=0; i<player.getPlayers().length;i++) {
             player.getPlayers()[i].setMoney(player.getPlayers()[i].getMoney()-1);
-            directGUICommands.changeBalanceGUI(player.getPlayers()[i]);
+            controllerGUI.changeBalanceGUI(player.getPlayers()[i]);
         }
 
     }
@@ -238,7 +235,7 @@ public class ChanceField extends Fields {
      */
     public void chanceCardGoodBoyHomeWork(Player player) {
         player.setMoney(player.getMoney()+2);
-        directGUICommands.changeBalanceGUI(player);
+        controllerGUI.changeBalanceGUI(player);
     }
 
     /**

@@ -2,14 +2,13 @@ package org.Game;
 
 import org.Game.Board.Fields;
 import org.Game.Board.InidBoard;
-import org.Game.Board.Picker;
 import org.Game.Die.RollDice;
 import org.Game.Player.Player;
-import org.guiContact.DirectGUICommands;
+import org.guiContact.ControllerGUI;
 
 public class GameLogic {
 
-    DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
+    ControllerGUI controllerGUI = ControllerGUI.getInstance();
 
     InidBoard board = new InidBoard();
 
@@ -20,11 +19,11 @@ public class GameLogic {
 
         //Creates players
         Player player = new Player();
-        player.AmountOfPlayers(directGUICommands.PlayerAmount());
+        player.AmountOfPlayers(controllerGUI.PlayerAmount());
         //Start money
         startMoney(player);
         //Creates GUI players
-        directGUICommands.AddPlayers(player);
+        controllerGUI.AddPlayers(player);
         //Creates empty player object
         Player turnPlayer;
 
@@ -39,7 +38,7 @@ public class GameLogic {
             endGameCondition(player);
             if(!isEndGame()){
                 //Creates box to click for rolling dice
-                directGUICommands.StartTurn(turnPlayer);
+                controllerGUI.StartTurn(turnPlayer);
                 //Moves player and roll dice
                 MovePlayer(turnPlayer);
                 //Field response
@@ -76,7 +75,7 @@ public class GameLogic {
         int ourRoll = rollDice.getOurRolls();
 
         //Show dice roll in gui
-        directGUICommands.rollDiceGUI(ourRoll);
+        controllerGUI.rollDiceGUI(ourRoll);
 
         //Finds players next position
         int nextFieldPlacement = player.getPosition() + ourRoll;
@@ -96,20 +95,13 @@ public class GameLogic {
         */
 
 
-        directGUICommands.MovePlayer(player, nextFieldPlacement);
+        controllerGUI.MovePlayer(player, nextFieldPlacement);
 
     }
 
-    public static void buyProperty(Player player, int fieldIndex){
-        Picker picker = new Picker();
-        picker.landedField(player,fieldIndex);
-    }
 
-    public void printPlayerPositionToConsole(int fieldIndex) {
-        fieldIndex = 0;
 
-        System.out.println(fieldIndex);
-    }
+
 
     public void endGameCondition(Player player){
         for(int i = 0; i < player.getPlayers().length; i++){
@@ -154,7 +146,7 @@ public class GameLogic {
 
         temp = player.getPlayers()[player.getPlayers().length-1];
 
-        directGUICommands.winningGUI(temp);
+        controllerGUI.winningGUI(temp);
 
     }
 

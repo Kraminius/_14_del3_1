@@ -1,16 +1,16 @@
 package org.Game.Board;
 
 import org.Game.Player.Player;
-import org.guiContact.DirectGUICommands;
+import org.guiContact.ControllerGUI;
 
 public abstract class PropertyFields extends Fields {
     int fieldID;
     private int fieldRent;
 
-    DirectGUICommands directGUICommands = DirectGUICommands.getInstance();
+    ControllerGUI controllerGUI = ControllerGUI.getInstance();
 
     Player player;
-    Instantiering instantiering = new Instantiering();
+
 
     public PropertyFields(int Id, int fieldRent){
         this.fieldID = Id;
@@ -31,8 +31,8 @@ public abstract class PropertyFields extends Fields {
     public void buyProperty(Player player) {
         this.player = player;
         player.setMoney(player.getMoney()-this.fieldRent);
-        directGUICommands.ownedPropertyGUI(player, fieldID);
-        directGUICommands.changeBalanceGUI(player);
+        controllerGUI.ownedPropertyGUI(player, fieldID);
+        controllerGUI.changeBalanceGUI(player);
 
     }
 
@@ -47,7 +47,7 @@ public abstract class PropertyFields extends Fields {
 
         player.setMoney(player.getMoney()-this.fieldRent);
         this.player.setMoney(this.player.getMoney()+this.fieldRent);
-        directGUICommands.reentGUI(this.player,player);
+        controllerGUI.reentGUI(this.player,player);
 
     }
 
