@@ -43,7 +43,7 @@ public class ChanceField extends Fields {
                 String[] properties = {"Skaterparken", "Swimmingpool"};
 
                 fullTurn(player, properties);
-
+                chanceCardMoveToStrandpromenaden(player);
                 break;
             }
             case 1: {
@@ -73,7 +73,7 @@ public class ChanceField extends Fields {
                 break;
             }
             case 5: {
-                String[] properties = {"Skateparken"};
+                String[] properties = {"Skaterparken"};
 
                 fullTurn(player, properties);
                 break;
@@ -99,6 +99,7 @@ public class ChanceField extends Fields {
             case 9:
                 break;
             //Card 10;Ryk 1 felt frem, eller tag et chancekort mere.
+
             case 10:
                 break;
             case 11:
@@ -106,7 +107,6 @@ public class ChanceField extends Fields {
                 break;
             case 12:
                 break;
-            //Card 13;Ryk frem til Strandpromenaden.
             case 13:
                 PropertyFields propertyFields = Strandpromenaden.getInstance();
                 didPlayerPassStart(player, 23);
@@ -213,6 +213,12 @@ public class ChanceField extends Fields {
     public void chanceCardTooMuchCandy(Player player){
         player.setMoney(player.getMoney()-2);
         directGUICommands.changeBalanceGUI(player);
+    }
+
+    public void chanceCardMoveToStrandpromenaden(Player player){
+
+        player.setPosition(23);
+        directGUICommands.MovePlayer(player, 23);
     }
 
     /**

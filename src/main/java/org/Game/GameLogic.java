@@ -28,6 +28,7 @@ public class GameLogic {
         //Creates empty player object
         Player turnPlayer;
 
+
         //Game Loop
         do{
             //Finds current player
@@ -88,6 +89,7 @@ public class GameLogic {
 
 
         player.setPosition(nextFieldPlacement);
+
 /*      if(nextFieldPlacement == GoToPrison){
             nextFieldPlacement = Prison;
             player.setJail(true);
