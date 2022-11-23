@@ -35,6 +35,7 @@ public class GameLogic {
             turnPlayer.setPlayers(player.getPlayers());
             //Checks if player is in jail
             playerIsInPrison(turnPlayer);
+            endGameCondition(player);
             if(!isEndGame()){
                 //Creates box to click for rolling dice
                 directGUICommands.StartTurn(turnPlayer);
@@ -174,7 +175,6 @@ public class GameLogic {
 
     public void processTurn(Player player){
         Fields fields = board.getBoard()[player.getPosition()];
-        fields = board.getBoard()[3];
         fields.turnAction(player);
     }
 
