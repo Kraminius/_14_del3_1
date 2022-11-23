@@ -11,7 +11,7 @@ public class Deck {
 
     public Deck(){
 
-        Card[] cards = new Card[15];
+        Card[] cards = new Card[14];
 
         String[] liste = desc.fileReader(1);
 
