@@ -5,6 +5,8 @@ import org.Game.GameLogic;
 import org.Game.Player.Player;
 import org.guiContact.DirectGUICommands;
 
+import java.text.NumberFormat;
+
 public class ChanceField extends Fields {
 
 
@@ -41,9 +43,7 @@ public class ChanceField extends Fields {
 
                 //Possible roperties
                 String[] properties = {"Skaterparken", "Swimmingpool"};
-
                 fullTurn(player, properties);
-                chanceCardMoveToStrandpromenaden(player);
                 break;
             }
             case 1: {
