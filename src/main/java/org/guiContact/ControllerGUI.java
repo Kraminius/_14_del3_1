@@ -29,10 +29,6 @@ public class ControllerGUI {
 
     }
 
-    public void CreateGUI(){
-
-
-    }
 
     //Click a button to roll
     public void StartTurn(Player player){
@@ -84,33 +80,7 @@ public class ControllerGUI {
         }
         return gui;
     }
-    public String GetStringFromPlayer(String msg){
-        gui.displayChanceCard(msg);
-        return gui.getUserString("");
-    }
-    public int GetIntFromPlayer(String msg){
-        gui.displayChanceCard(msg);
-        return gui.getUserInteger("");
-    }
-    public String TwoChoiceMessage(String msg, String option1, String option2){
-        gui.displayChanceCard(msg);
-        String chosenButton = gui.getUserButtonPressed("",option1, option2);
-        if(chosenButton == option1){
-            return "1";
-        }
-        else if(chosenButton == option2){
-            return "2";
-        }
-        else{
-            System.out.println("Failure to understand returned answer");
-            return "false";
-        }
 
-    }
-    public void messageBox(String msg){
-        gui.displayChanceCard(msg);
-        gui.showMessage("");
-    }
 
     public static ControllerGUI getInstance(){
         if(ControllerGUI == null){
