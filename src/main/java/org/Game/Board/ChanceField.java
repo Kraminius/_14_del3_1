@@ -99,6 +99,7 @@ public class ChanceField extends Fields {
                 chanceCardTooMuchCandy(player);
                 break;
             case 10:
+                player.setGOOJCard(true);
                 break;
             case 11:
                 PropertyFields propertyFields = Strandpromenaden.getInstance();
