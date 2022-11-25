@@ -2,7 +2,7 @@ package org.Game;
 
 import org.Game.Board.Fields;
 import org.Game.Board.InidBoard;
-import org.Game.Die.RollDice;
+import org.Game.Die.Rafflecup;
 import org.Game.Player.Player;
 import org.guiContact.ControllerGUI;
 
@@ -68,7 +68,7 @@ public class GameLogic {
 
 
         */
-        RollDice rollDice = new RollDice();
+        Rafflecup rollDice = new Rafflecup();
 
         //Rolls
         rollDice.Roll();
